@@ -1,0 +1,250 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (720) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (722) boot: compile time Nov  6 2026 17:26:45[0m
+[0;32mI (722) boot: Multicore bootloader[0m
+[0;32mI (798) boot: chip revision: v3.0[0m
+[0;32mI (801) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (801) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (802) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (814) boot: Enabling RNG early entropy source...[0m
+[0;32mI (829) boot: Partition Table:[0m
+[0;32mI (829) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (829) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (830) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (830) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (838) boot: End of partition table[0m
+[0;32mI (916) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06d18h ( 27928) map[0m
+[0;32mI (959) esp_image: segment 1: paddr=00016d40 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (990) esp_image: segment 2: paddr=000195e4 vaddr=40080000 size=06a34h ( 27188) load[0m
+[0;32mI (1027) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b024h ( 45092) map[0m
+[0;32mI (1061) esp_image: segment 4: paddr=0002b04c vaddr=40086a34 size=03a1ch ( 14876) load[0m
+[0;32mI (1090) esp_image: segment 5: paddr=0002ea70 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1210) cpu_start: Multicore app[0m
+[0;32mI (2105) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (2110) cpu_start: Pro cpu start user code[0m
+[0;32mI (2110) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (2110) app_init: Application information:[0m
+[0;32mI (2111) app_init: Project name:     hello_world[0m
+[0;32mI (2111) app_init: App version:      1[0m
+[0;32mI (2111) app_init: Compile time:     Nov  6 2026 17:26:59[0m
+[0;32mI (2112) app_init: ELF file SHA256:  cb807815e...[0m
+[0;32mI (2112) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (2112) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (2112) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (2113) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (2114) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (2116) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (2116) heap_init: At 3FFB3260 len 0002CDA0 (179 KiB): DRAM[0m
+[0;32mI (2116) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (2117) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (2117) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (2192) spi_flash: detected chip: winbond[0m
+[0;32mI (2202) spi_flash: flash io: dio[0m
+[0;32mI (2234) main_task: Started on CPU0[0m
+[0;32mI (2244) main_task: Calling app_main()[0m
+[0;36m1:0>	Start of app_main task, priority = 1[0m
+[0;36m1:0>	==== Exit APP_MAIN ====[0m
+[38;5;93m1:1>	Start of Task 1 task, priority = 5[0m
+[0;36m1:0>	Start of Task 2 task, priority = 5[0m
+[38;5;93m2:1>	Running Task 1[0m
+[0;36m2:0>	Running Task 2[0m
+[38;5;93m10:1>	Running Task 1[0m
+[0;36m11:0>	Running Task 2[0m
+[38;5;93m18:1>	Running Task 1[0m
+[0;36m19:0>	Running Task 2[0m
+[38;5;93m25:1>	Running Task 1[0m
+[0;36m26:0>	Running Task 2[0m
+[38;5;93m33:1>	Running Task 1[0m
+[0;36m34:0>	Running Task 2[0m
+[38;5;93m40:1>	Running Task 1[0m
+[0;36m41:0>	Running Task 2[0m
+[38;5;93m47:1>	Running Task 1[0m
+[0;36m48:0>	Running Task 2[0m
+[38;5;93m54:1>	Running Task 1[0m
+[0;36m55:0>	Running Task 2[0m
+[38;5;93m61:1>	Running Task 1[0m
+[0;36m62:0>	Running Task 2[0m
+[38;5;93m68:1>	Running Task 1[0m
+[0;36m69:0>	Running Task 2[0m
+[38;5;93m75:1>	Running Task 1[0m
+[0;36m76:0>	Running Task 2[0m
+[38;5;93m82:1>	Running Task 1[0m
+[0;36m83:0>	Running Task 2[0m
+[38;5;93m89:1>	Running Task 1[0m
+[0;36m90:0>	Running Task 2[0m
+[38;5;93m95:1>	Running Task 1[0m
+[0;36m96:0>	Running Task 2[0m
+[38;5;93m102:1>	Running Task 1[0m
+[0;36m103:0>	Running Task 2[0m
+[38;5;93m109:1>	Running Task 1[0m
+[0;36m110:0>	Running Task 2[0m
+[38;5;93m115:1>	Running Task 1[0m
+[0;36m117:0>	Running Task 2[0m
+[38;5;93m122:1>	Running Task 1[0m
+[0;36m124:0>	Running Task 2[0m
+[38;5;93m129:1>	Running Task 1[0m
+[0;36m130:0>	Running Task 2[0m
+[38;5;93m136:1>	Running Task 1[0m
+[0;36m137:0>	Running Task 2[0m
+[38;5;93m143:1>	Running Task 1[0m
+[0;36m144:0>	Running Task 2[0m
+[38;5;93m149:1>	Running Task 1[0m
+[0;36m151:0>	Running Task 2[0m
+[38;5;93m156:1>	Running Task 1[0m
+[0;36m157:0>	Running Task 2[0m
+[38;5;93m163:1>	Running Task 1[0m
+[0;36m164:0>	Running Task 2[0m
+[38;5;93m170:1>	Running Task 1[0m
+[0;36m171:0>	Running Task 2[0m
+[38;5;93m176:1>	Running Task 1[0m
+[0;36m178:0>	Running Task 2[0m
+[38;5;93m183:1>	Running Task 1[0m
+[0;36m185:0>	Running Task 2[0m
+[38;5;93m190:1>	Running Task 1[0m
+[0;36m191:0>	Running Task 2[0m
+[38;5;93m197:1>	Running Task 1[0m
+[0;36m198:0>	Running Task 2[0m
+[38;5;93m204:1>	Running Task 1[0m
+[0;36m205:0>	Running Task 2[0m
+[38;5;93m210:1>	Running Task 1[0m
+[0;36m212:0>	Running Task 2[0m
+[38;5;93m217:1>	Running Task 1[0m
+[0;36m218:0>	Running Task 2[0m
+[38;5;93m224:1>	Running Task 1[0m
+[0;36m225:0>	Running Task 2[0m
+[38;5;93m231:1>	Running Task 1[0m
+[0;36m232:0>	Running Task 2[0m
+[38;5;93m238:1>	Running Task 1[0m
+[0;36m239:0>	Running Task 2[0m
+[38;5;93m245:1>	Running Task 1[0m
+[0;36m245:0>	Running Task 2[0m
+[38;5;93m251:1>	Running Task 1[0m
+[0;36m252:0>	Running Task 2[0m
+[38;5;93m258:1>	Running Task 1[0m
+[0;36m259:0>	Running Task 2[0m
+[38;5;93m265:1>	Running Task 1[0m
+[0;36m266:0>	Running Task 2[0m
+[38;5;93m271:1>	Running Task 1[0m
+[0;36m273:0>	Running Task 2[0m
+[38;5;93m278:1>	Running Task 1[0m
+[0;36m279:0>	Running Task 2[0m
+[38;5;93m285:1>	Running Task 1[0m
+[0;36m286:0>	Running Task 2[0m
+[38;5;93m292:1>	Running Task 1[0m
+[0;36m293:0>	Running Task 2[0m
+[38;5;93m298:1>	Running Task 1[0m
+[0;36m299:0>	Running Task 2[0m
+[38;5;93m305:1>	Running Task 1[0m
+[0;36m306:0>	Running Task 2[0m
+[38;5;93m312:1>	Running Task 1[0m
+[0;36m313:0>	Running Task 2[0m
+[38;5;93m318:1>	Running Task 1[0m
+[0;36m319:0>	Running Task 2[0m
+[38;5;93m325:1>	Running Task 1[0m
+[0;36m326:0>	Running Task 2[0m
+[38;5;93m332:1>	Running Task 1[0m
+[0;36m333:0>	Running Task 2[0m
+[38;5;93m338:1>	Running Task 1[0m
+[0;36m340:0>	Running Task 2[0m
+[38;5;93m345:1>	Running Task 1[0m
+[0;36m346:0>	Running Task 2[0m
+[38;5;93m352:1>	Running Task 1[0m
+[0;36m353:0>	Running Task 2[0m
+[38;5;93m358:1>	Running Task 1[0m
+[0;36m360:0>	Running Task 2[0m
+[38;5;93m365:1>	Running Task 1[0m
+[0;36m366:0>	Running Task 2[0m
+[38;5;93m372:1>	Running Task 1[0m
+[0;36m373:0>	Running Task 2[0m
+[38;5;93m378:1>	Running Task 1[0m
+[0;36m380:0>	Running Task 2[0m
+[38;5;93m385:1>	Running Task 1[0m
+[0;36m386:0>	Running Task 2[0m
+[38;5;93m392:1>	Running Task 1[0m
+[0;36m393:0>	Running Task 2[0m
+[38;5;93m399:1>	Running Task 1[0m
+[0;36m400:0>	Running Task 2[0m
+[38;5;93m405:1>	Running Task 1[0m
+[0;36m407:0>	Running Task 2[0m
+[38;5;93m412:1>	Running Task 1[0m
+[0;36m414:0>	Running Task 2[0m
+[38;5;93m419:1>	Running Task 1[0m
+[0;36m421:0>	Running Task 2[0m
+[38;5;93m426:1>	Running Task 1[0m
+[0;36m428:0>	Running Task 2[0m
+[38;5;93m433:1>	Running Task 1[0m
+[0;36m435:0>	Running Task 2[0m
+[38;5;93m440:1>	Running Task 1[0m
+[0;36m442:0>	Running Task 2[0m
+[38;5;93m447:1>	Running Task 1[0m
+[0;36m448:0>	Running Task 2[0m
+[38;5;93m454:1>	Running Task 1[0m
+[0;36m456:0>	Running Task 2[0m
+[38;5;93m462:1>	Running Task 1[0m
+[0;36m463:0>	Running Task 2[0m
+[38;5;93m469:1>	Running Task 1[0m
+[0;36m470:0>	Running Task 2[0m
+[38;5;93m477:1>	Running Task 1[0m
+[0;36m477:0>	Running Task 2[0m
+[38;5;93m484:1>	Running Task 1[0m
+[0;36m484:0>	Running Task 2[0m
+[38;5;93m491:1>	Running Task 1[0m
+[0;36m491:0>	Running Task 2[0m
+[0;36m498:0>	Running Task 2[0m
+[38;5;93m498:1>	Running Task 1[0m
+[0;36m505:0>	Running Task 2[0m
+[38;5;93m506:1>	Running Task 1[0m
+[38;5;93m513:1>	Running Task 1[0m
+[0;36m513:0>	Running Task 2[0m
+[38;5;93m520:1>	Running Task 1[0m
+[0;36m520:0>	Running Task 2[0m
+[0;36m527:0>	Running Task 2[0m
+[38;5;93m527:1>	Running Task 1[0m
+[0;36m534:0>	Running Task 2[0m
+[38;5;93m535:1>	Running Task 1[0m
+[0;36m541:0>	Running Task 2[0m
+[38;5;93m542:1>	Running Task 1[0m
+[0;36m548:0>	Running Task 2[0m
+[38;5;93m549:1>	Running Task 1[0m
+[0;36m555:0>	Running Task 2[0m
+[38;5;93m556:1>	Running Task 1[0m
+[0;36m563:0>	Running Task 2[0m
+[38;5;93m564:1>	Running Task 1[0m
+[0;36m570:0>	Running Task 2[0m
+[38;5;93m571:1>	Running Task 1[0m
+[0;36m577:0>	Running Task 2[0m
+[38;5;93m578:1>	Running Task 1[0m
+[0;36m584:0>	Running Task 2[0m
+[38;5;93m585:1>	Running Task 1[0m
+[0;36m591:0>	Running Task 2[0m
+[38;5;93m592:1>	Running Task 1[0m
+[0;36m598:0>	Running Task 2[0m
+[38;5;93m599:1>	Running Task 1[0m
+[0;36m605:0>	Running Task 2[0m
+[38;5;93m606:1>	Running Task 1[0m
+[0;36m612:0>	Running Task 2[0m
+[38;5;93m613:1>	Running Task 1[0m
+[0;36m619:0>	Running Task 2[0m
+[38;5;93m619:1>	Running Task 1[0m
+[0;36m625:0>	Running Task 2[0m
+[38;5;93m626:1>	Running Task 1[0m
+[0;36m632:0>	Running Task 2[0m
+[38;5;93m633:1>	Running Task 1[0m
+[0;36m638:0>	Running Task 2[0m
+[38;5;93m639:1>	Running Task 1[0m
+[0;36m645:0>	Running Task 2[0m
+[38;5;93m646:1>	Running Task 1[0m
+[0;36m651:0>	Running Task 2[0m
+[38;5;93m652:1>	Running Task 1[0m

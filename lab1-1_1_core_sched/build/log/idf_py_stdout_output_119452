@@ -1,0 +1,59 @@
+Command: cmake -G Ninja -B /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig '/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/sdkconfig'
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Minimal build - ON
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/cedric/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/cedric/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/cedric/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git describe returned 'fatal: bad revision 'HEAD''
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "hello_world" version: 1
+-- Found Python3: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /home/cedric/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /home/cedric/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/cedric/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Adding linker script /home/cedric/esp/esp-idf/components/esp_hal_regi2c/esp32/rom.regi2c.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_driver_dma esp_driver_gpio esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_mspi esp_hal_pmu esp_hal_regi2c esp_hal_rtc_timer esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_mm esp_partition esp_pm esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console esptool_py freertos hal heap log main mbedtls partition_table pthread soc spi_flash xtensa
+-- Component paths: /home/cedric/esp/esp-idf/components/app_update /home/cedric/esp/esp-idf/components/bootloader /home/cedric/esp/esp-idf/components/bootloader_support /home/cedric/esp/esp-idf/components/cxx /home/cedric/esp/esp-idf/components/efuse /home/cedric/esp/esp-idf/components/esp_app_format /home/cedric/esp/esp-idf/components/esp_blockdev /home/cedric/esp/esp-idf/components/esp_bootloader_format /home/cedric/esp/esp-idf/components/esp_common /home/cedric/esp/esp-idf/components/esp_driver_dma /home/cedric/esp/esp-idf/components/esp_driver_gpio /home/cedric/esp/esp-idf/components/esp_hal_ana_conv /home/cedric/esp/esp-idf/components/esp_hal_clock /home/cedric/esp/esp-idf/components/esp_hal_dma /home/cedric/esp/esp-idf/components/esp_hal_gpio /home/cedric/esp/esp-idf/components/esp_hal_gpspi /home/cedric/esp/esp-idf/components/esp_hal_i2s /home/cedric/esp/esp-idf/components/esp_hal_mspi /home/cedric/esp/esp-idf/components/esp_hal_pmu /home/cedric/esp/esp-idf/components/esp_hal_regi2c /home/cedric/esp/esp-idf/components/esp_hal_rtc_timer /home/cedric/esp/esp-idf/components/esp_hal_security /home/cedric/esp/esp-idf/components/esp_hal_systimer /home/cedric/esp/esp-idf/components/esp_hal_timg /home/cedric/esp/esp-idf/components/esp_hal_touch_sens /home/cedric/esp/esp-idf/components/esp_hal_uart /home/cedric/esp/esp-idf/components/esp_hal_usb /home/cedric/esp/esp-idf/components/esp_hal_wdt /home/cedric/esp/esp-idf/components/esp_hw_support /home/cedric/esp/esp-idf/components/esp_libc /home/cedric/esp/esp-idf/components/esp_mm /home/cedric/esp/esp-idf/components/esp_partition /home/cedric/esp/esp-idf/components/esp_pm /home/cedric/esp/esp-idf/components/esp_rom /home/cedric/esp/esp-idf/components/esp_security /home/cedric/esp/esp-idf/components/esp_stdio /home/cedric/esp/esp-idf/components/esp_system /home/cedric/esp/esp-idf/components/esp_timer /home/cedric/esp/esp-idf/components/esp_usb_cdc_rom_console /home/cedric/esp/esp-idf/components/esptool_py /home/cedric/esp/esp-idf/components/freertos /home/cedric/esp/esp-idf/components/hal /home/cedric/esp/esp-idf/components/heap /home/cedric/esp/esp-idf/components/log /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main /home/cedric/esp/esp-idf/components/mbedtls /home/cedric/esp/esp-idf/components/partition_table /home/cedric/esp/esp-idf/components/pthread /home/cedric/esp/esp-idf/components/soc /home/cedric/esp/esp-idf/components/spi_flash /home/cedric/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build
