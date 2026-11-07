@@ -1,0 +1,6 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+--- esp-idf-monitor 1.10.0 on socket://localhost:5555 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x40080400: _invalid_pc_placeholder at /home/cedric/esp/esp-idf/components/xtensa/xtensa_vectors.S:2259
+--- 0x4008061c: call_start_cpu0 at /home/cedric/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+

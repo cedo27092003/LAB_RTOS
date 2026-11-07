@@ -90,4 +90,12 @@ void vTaskFunction(void *pvParameters) {
 	}
 }
 
+bool vApplicationIdleHook ( void ){
+	DISPLAYC (COLOR_GRAY, "IDLE");
+	return true;
+}
+
+
+void vApplicationTickHook ( void ){
+}
 
