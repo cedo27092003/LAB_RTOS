@@ -1,4 +1,4 @@
-# Install script for directory: /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main
+# Install script for directory: /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

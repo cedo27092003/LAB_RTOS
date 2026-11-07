@@ -1,13 +1,13 @@
 {
     "version":            "1.3",
     "project_name":       "hello_world",
-    "project_version":    "4183132-dirty",
-    "project_path":       "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched",
+    "project_version":    "ffcc855-dirty",
+    "project_path":       "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched",
     "idf_path":           "/home/cedric/esp/esp-idf",
-    "build_dir":          "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build",
-    "config_file":        "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/sdkconfig",
+    "build_dir":          "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build",
+    "config_file":        "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/sdkconfig",
     "config_defaults":    "",
-    "bootloader_elf":     "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/bootloader.elf",
+    "bootloader_elf":     "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/bootloader.elf",
     "app_elf":            "hello_world.elf",
     "app_bin":            "hello_world.bin",
     "build_type":         "flash_app",
@@ -26,7 +26,7 @@
     },
     "common_component_reqs": [ "cxx", "esp_libc", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "esp_stdio", "xtensa" ],
     "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_common", "esp_driver_dma", "esp_driver_gpio", "esp_hal_ana_conv", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2s", "esp_hal_mspi", "esp_hal_pmu", "esp_hal_regi2c", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_systimer", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hw_support", "esp_libc", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_usb_cdc_rom_console", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "partition_table", "pthread", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/cedric/esp/esp-idf/components/app_update", "/home/cedric/esp/esp-idf/components/bootloader", "/home/cedric/esp/esp-idf/components/bootloader_support", "/home/cedric/esp/esp-idf/components/cxx", "/home/cedric/esp/esp-idf/components/efuse", "/home/cedric/esp/esp-idf/components/esp_app_format", "/home/cedric/esp/esp-idf/components/esp_blockdev", "/home/cedric/esp/esp-idf/components/esp_bootloader_format", "/home/cedric/esp/esp-idf/components/esp_common", "/home/cedric/esp/esp-idf/components/esp_driver_dma", "/home/cedric/esp/esp-idf/components/esp_driver_gpio", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv", "/home/cedric/esp/esp-idf/components/esp_hal_clock", "/home/cedric/esp/esp-idf/components/esp_hal_dma", "/home/cedric/esp/esp-idf/components/esp_hal_gpio", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi", "/home/cedric/esp/esp-idf/components/esp_hal_i2s", "/home/cedric/esp/esp-idf/components/esp_hal_mspi", "/home/cedric/esp/esp-idf/components/esp_hal_pmu", "/home/cedric/esp/esp-idf/components/esp_hal_regi2c", "/home/cedric/esp/esp-idf/components/esp_hal_rtc_timer", "/home/cedric/esp/esp-idf/components/esp_hal_security", "/home/cedric/esp/esp-idf/components/esp_hal_systimer", "/home/cedric/esp/esp-idf/components/esp_hal_timg", "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens", "/home/cedric/esp/esp-idf/components/esp_hal_uart", "/home/cedric/esp/esp-idf/components/esp_hal_usb", "/home/cedric/esp/esp-idf/components/esp_hal_wdt", "/home/cedric/esp/esp-idf/components/esp_hw_support", "/home/cedric/esp/esp-idf/components/esp_libc", "/home/cedric/esp/esp-idf/components/esp_mm", "/home/cedric/esp/esp-idf/components/esp_partition", "/home/cedric/esp/esp-idf/components/esp_pm", "/home/cedric/esp/esp-idf/components/esp_rom", "/home/cedric/esp/esp-idf/components/esp_security", "/home/cedric/esp/esp-idf/components/esp_stdio", "/home/cedric/esp/esp-idf/components/esp_system", "/home/cedric/esp/esp-idf/components/esp_timer", "/home/cedric/esp/esp-idf/components/esp_usb_cdc_rom_console", "/home/cedric/esp/esp-idf/components/esptool_py", "/home/cedric/esp/esp-idf/components/freertos", "/home/cedric/esp/esp-idf/components/hal", "/home/cedric/esp/esp-idf/components/heap", "/home/cedric/esp/esp-idf/components/log", "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main", "/home/cedric/esp/esp-idf/components/mbedtls", "/home/cedric/esp/esp-idf/components/partition_table", "/home/cedric/esp/esp-idf/components/pthread", "/home/cedric/esp/esp-idf/components/soc", "/home/cedric/esp/esp-idf/components/spi_flash", "/home/cedric/esp/esp-idf/components/xtensa", "" ],
+    "build_component_paths" : [ "/home/cedric/esp/esp-idf/components/app_update", "/home/cedric/esp/esp-idf/components/bootloader", "/home/cedric/esp/esp-idf/components/bootloader_support", "/home/cedric/esp/esp-idf/components/cxx", "/home/cedric/esp/esp-idf/components/efuse", "/home/cedric/esp/esp-idf/components/esp_app_format", "/home/cedric/esp/esp-idf/components/esp_blockdev", "/home/cedric/esp/esp-idf/components/esp_bootloader_format", "/home/cedric/esp/esp-idf/components/esp_common", "/home/cedric/esp/esp-idf/components/esp_driver_dma", "/home/cedric/esp/esp-idf/components/esp_driver_gpio", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv", "/home/cedric/esp/esp-idf/components/esp_hal_clock", "/home/cedric/esp/esp-idf/components/esp_hal_dma", "/home/cedric/esp/esp-idf/components/esp_hal_gpio", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi", "/home/cedric/esp/esp-idf/components/esp_hal_i2s", "/home/cedric/esp/esp-idf/components/esp_hal_mspi", "/home/cedric/esp/esp-idf/components/esp_hal_pmu", "/home/cedric/esp/esp-idf/components/esp_hal_regi2c", "/home/cedric/esp/esp-idf/components/esp_hal_rtc_timer", "/home/cedric/esp/esp-idf/components/esp_hal_security", "/home/cedric/esp/esp-idf/components/esp_hal_systimer", "/home/cedric/esp/esp-idf/components/esp_hal_timg", "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens", "/home/cedric/esp/esp-idf/components/esp_hal_uart", "/home/cedric/esp/esp-idf/components/esp_hal_usb", "/home/cedric/esp/esp-idf/components/esp_hal_wdt", "/home/cedric/esp/esp-idf/components/esp_hw_support", "/home/cedric/esp/esp-idf/components/esp_libc", "/home/cedric/esp/esp-idf/components/esp_mm", "/home/cedric/esp/esp-idf/components/esp_partition", "/home/cedric/esp/esp-idf/components/esp_pm", "/home/cedric/esp/esp-idf/components/esp_rom", "/home/cedric/esp/esp-idf/components/esp_security", "/home/cedric/esp/esp-idf/components/esp_stdio", "/home/cedric/esp/esp-idf/components/esp_system", "/home/cedric/esp/esp-idf/components/esp_timer", "/home/cedric/esp/esp-idf/components/esp_usb_cdc_rom_console", "/home/cedric/esp/esp-idf/components/esptool_py", "/home/cedric/esp/esp-idf/components/freertos", "/home/cedric/esp/esp-idf/components/hal", "/home/cedric/esp/esp-idf/components/heap", "/home/cedric/esp/esp-idf/components/log", "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/main", "/home/cedric/esp/esp-idf/components/mbedtls", "/home/cedric/esp/esp-idf/components/partition_table", "/home/cedric/esp/esp-idf/components/pthread", "/home/cedric/esp/esp-idf/components/soc", "/home/cedric/esp/esp-idf/components/spi_flash", "/home/cedric/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -39,7 +39,7 @@
             "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/app_update/libapp_update.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/app_update/esp_ota_ops.c" ],
             "include_dirs": [ "include" ]
         },
@@ -69,7 +69,7 @@
             "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format", "esptool_py", "esp_hal_wdt", "esp_hal_gpio", "esp_hal_uart", "esp_hal_ana_conv", "esp_hal_rtc_timer", "esp_hal_clock", "esp_hal_security", "esp_security" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/bootloader_support/libbootloader_support.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/home/cedric/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/cedric/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/cedric/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c", "/home/cedric/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot_secure_features.c" ],
             "include_dirs": [ "include", "bootloader_flash/include" ]
         },
@@ -84,7 +84,7 @@
             "priv_reqs": [ "pthread" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/cxx/libcxx.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/cxx/libcxx.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/cxx/cxx_exception_stubs.cpp", "/home/cedric/esp/esp-idf/components/cxx/cxx_guards.cpp", "/home/cedric/esp/esp-idf/components/cxx/cxx_init.cpp" ],
             "include_dirs": []
         },
@@ -99,7 +99,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format", "esp_hal_security" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/efuse/libefuse.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/home/cedric/esp/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/home/cedric/esp/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/home/cedric/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/cedric/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/cedric/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/cedric/esp/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/home/cedric/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -114,7 +114,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_app_format/libesp_app_format.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_app_format/esp_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -159,7 +159,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_common/libesp_common.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -174,7 +174,7 @@
             "priv_reqs": [ "esp_mm", "efuse" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_driver_dma/libesp_driver_dma.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_driver_dma/libesp_driver_dma.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_driver_dma/src/esp_dma_utils.c", "/home/cedric/esp/esp-idf/components/esp_driver_dma/src/gdma_link.c" ],
             "include_dirs": [ "include" ]
         },
@@ -189,7 +189,7 @@
             "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_driver_gpio/src/gpio.c", "/home/cedric/esp/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/home/cedric/esp/esp-idf/components/esp_driver_gpio/src/rtc_io.c" ],
             "include_dirs": [ "include" ]
         },
@@ -204,7 +204,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_ana_conv/libesp_hal_ana_conv.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_ana_conv/libesp_hal_ana_conv.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv/esp32/adc_periph.c", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv/adc_hal_common.c", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv/adc_oneshot_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv/adc_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_ana_conv/esp32/dac_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -219,7 +219,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_clock/libesp_hal_clock.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_clock/libesp_hal_clock.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_clock/esp32/clk_tree_hal.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -249,7 +249,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_gpio/libesp_hal_gpio.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_gpio/libesp_hal_gpio.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_gpio/gpio_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpio/rtc_io_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpio/esp32/rtc_io_periph.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpio/sdm_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpio/esp32/sdm_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -264,7 +264,7 @@
             "priv_reqs": [ "esp_hal_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_gpspi/libesp_hal_gpspi.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_gpspi/libesp_hal_gpspi.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_gpspi/esp32/spi_periph.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi/spi_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi/spi_hal_iram.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi/spi_slave_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_gpspi/spi_slave_hal_iram.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -279,7 +279,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_i2s/libesp_hal_i2s.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_i2s/libesp_hal_i2s.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_i2s/i2s_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_i2s/esp32/i2s_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -294,7 +294,7 @@
             "priv_reqs": [ "esp_hal_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_mspi/libesp_hal_mspi.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_mspi/libesp_hal_mspi.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_mspi/spi_flash_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_mspi/spi_flash_hal_iram.c", "/home/cedric/esp/esp-idf/components/esp_hal_mspi/spi_flash_encrypt_hal_iram.c", "/home/cedric/esp/esp-idf/components/esp_hal_mspi/esp32/mspi_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_pmu/libesp_hal_pmu.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_pmu/libesp_hal_pmu.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_pmu/brownout_hal.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -354,7 +354,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_security/libesp_hal_security.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_security/libesp_hal_security.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_security/mpi_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_security/sha_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_security/aes_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_security/mpu_hal.c" ],
             "include_dirs": [ "esp32/include", "include" ]
         },
@@ -384,7 +384,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_timg/libesp_hal_timg.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_timg/libesp_hal_timg.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_timg/timer_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_timg/esp32/timer_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -399,7 +399,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_touch_sens/libesp_hal_touch_sens.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_touch_sens/libesp_hal_touch_sens.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens/esp32/touch_sensor_legacy_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens/touch_sensor_legacy_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens/touch_sens_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_touch_sens/esp32/touch_sensor_periph.c" ],
             "include_dirs": [ "esp32/include", "include" ]
         },
@@ -414,7 +414,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_uart/libesp_hal_uart.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_uart/libesp_hal_uart.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_uart/uart_hal.c", "/home/cedric/esp/esp-idf/components/esp_hal_uart/uart_hal_iram.c", "/home/cedric/esp/esp-idf/components/esp_hal_uart/esp32/uart_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -444,7 +444,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_wdt/libesp_hal_wdt.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_wdt/libesp_hal_wdt.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hal_wdt/esp32/mwdt_periph.c", "/home/cedric/esp/esp-idf/components/esp_hal_wdt/wdt_hal_iram.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -459,7 +459,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_hal_wdt", "esp_hal_rtc_timer", "esp_hal_clock", "esp_hal_security", "esp_hal_systimer", "esp_hal_ana_conv", "esp_driver_gpio", "esp_timer", "esp_hal_touch_sens", "esp_pm", "esp_mm", "esp_hal_mspi", "esp_hal_uart" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_hw_support/cpu.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/cpu_region_protect.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/esp_clk.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/hw_random.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/intr_alloc.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/mac_addr.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/periph_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/revision.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/rtc_module.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sar_tsens_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/io_mux.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/io_mux.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/esp_clk_tree.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/spi_bus_lock.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/heap_align_hw.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/clk_utils.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/spi_share_hw_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_modem.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_cache.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_modes.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_uart.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_console.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_mspi.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_usb.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_gpio.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_event.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/rtc_wdt.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/mspi/mspi_timing_tuning/mspi_timing_tuning.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/mspi/mspi_intr/mspi_intr.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/esp_clock_output.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/power_supply/brownout.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk_init.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_init.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_sleep.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/chip_info.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/cache_sram_mmu.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/port/esp32/sar_periph_ctrl.c", "/home/cedric/esp/esp-idf/components/esp_hw_support/lowpower" ],
             "include_dirs": [ "include", "include/soc", "ldo/include", "debug_probe/include", "etm/include", "mspi/mspi_timing_tuning/include", "mspi/mspi_timing_tuning/tuning_scheme_impl/include", "mspi/mspi_intr/include", "power_supply/include", "modem/include" ]
         },
@@ -474,7 +474,7 @@
             "priv_reqs": [ "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_libc/libesp_libc.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_libc/libesp_libc.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_libc/src/init.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/abort.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/assert.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/heap.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/locks.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/poll.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/pthread.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/random.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/getentropy.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/termios.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/stdatomic.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/time.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/timekeeping.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/sysconf.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/realpath.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/scandir.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/syscalls.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/reent_syscalls.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/port/esp_time_impl.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/picolibc_init.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/rand.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/open_memstream.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/errno.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/bufio_setvbuf.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/getreent.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/picolibc/fopencookie.c", "/home/cedric/esp/esp-idf/components/esp_libc/src/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
         },
@@ -489,7 +489,7 @@
             "priv_reqs": [ "heap", "spi_flash", "esp_hal_dma" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_mm/libesp_mm.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_mm/libesp_mm.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_mm/esp_mmu_map.c", "/home/cedric/esp/esp-idf/components/esp_mm/port/esp32/ext_mem_layout.c", "/home/cedric/esp/esp-idf/components/esp_mm/esp_cache_msync.c", "/home/cedric/esp/esp-idf/components/esp_mm/esp_cache_utils.c", "/home/cedric/esp/esp-idf/components/esp_mm/cache_esp32.c" ],
             "include_dirs": [ "include" ]
         },
@@ -504,7 +504,7 @@
             "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "efuse", "bootloader_support", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_partition/libesp_partition.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_partition/partition.c", "/home/cedric/esp/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
         },
@@ -519,7 +519,7 @@
             "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer", "esp_hal_uart" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_pm/libesp_pm.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_pm/libesp_pm.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_pm/pm_locks.c", "/home/cedric/esp/esp-idf/components/esp_pm/pm_trace.c", "/home/cedric/esp/esp-idf/components/esp_pm/pm_impl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -534,7 +534,7 @@
             "priv_reqs": [ "soc", "hal", "esp_hal_uart", "esp_hal_security" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_rom/libesp_rom.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_serial_output.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/home/cedric/esp/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" ],
             "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
         },
@@ -549,7 +549,7 @@
             "priv_reqs": [ "esp_hw_support", "hal", "efuse", "esp_system", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_security/libesp_security.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_security/libesp_security.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_security/src/init.c", "/home/cedric/esp/esp-idf/components/esp_security/src/esp_crypto_lock.c", "/home/cedric/esp/esp-idf/components/esp_security/src/esp_crypto_periph_clk.c", "/home/cedric/esp/esp-idf/components/esp_security/src/esp32/esp_crypto_clk.c" ],
             "include_dirs": [ "include" ]
         },
@@ -564,7 +564,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_stdio/libesp_stdio.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_stdio/libesp_stdio.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_stdio/stdio_port.c", "/home/cedric/esp/esp-idf/components/esp_stdio/stdio_simple.c", "/home/cedric/esp/esp-idf/components/esp_stdio/stdio_syscalls_simple.c" ],
             "include_dirs": [ "include" ]
         },
@@ -579,8 +579,8 @@
             "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "esp_hal_mspi", "esp_hal_wdt", "esp_hal_uart", "esp_hal_clock", "esp_hal_dma", "bootloader_support", "esp_pm", "esp_usb_cdc_rom_console" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_system/libesp_system.a",
-            "sources": [ "/home/cedric/esp/esp-idf/components/esp_system/esp_err.c", "/home/cedric/esp/esp-idf/components/esp_system/crosscore_int.c", "/home/cedric/esp/esp-idf/components/esp_system/esp_ipc.c", "/home/cedric/esp/esp-idf/components/esp_system/freertos_hooks.c", "/home/cedric/esp/esp-idf/components/esp_system/panic.c", "/home/cedric/esp/esp-idf/components/esp_system/esp_system.c", "/home/cedric/esp/esp-idf/components/esp_system/startup.c", "/home/cedric/esp/esp-idf/components/esp_system/startup_funcs.c", "/home/cedric/esp/esp-idf/components/esp_system/system_time.c", "/home/cedric/esp/esp-idf/components/esp_system/stack_check.c", "/home/cedric/esp/esp-idf/components/esp_system/ubsan.c", "/home/cedric/esp/esp-idf/components/esp_system/int_wdt.c", "/home/cedric/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/home/cedric/esp/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/home/cedric/esp/esp-idf/components/esp_system/port/cpu_start.c", "/home/cedric/esp/esp-idf/components/esp_system/port/panic_handler.c", "/home/cedric/esp/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/cedric/esp/esp-idf/components/esp_system/port/image_process.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/highint_hdl.S", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/clk.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/system_internal.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/cache_err_int.c" ],
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_system/libesp_system.a",
+            "sources": [ "/home/cedric/esp/esp-idf/components/esp_system/esp_err.c", "/home/cedric/esp/esp-idf/components/esp_system/crosscore_int.c", "/home/cedric/esp/esp-idf/components/esp_system/esp_ipc.c", "/home/cedric/esp/esp-idf/components/esp_system/freertos_hooks.c", "/home/cedric/esp/esp-idf/components/esp_system/panic.c", "/home/cedric/esp/esp-idf/components/esp_system/esp_system.c", "/home/cedric/esp/esp-idf/components/esp_system/startup.c", "/home/cedric/esp/esp-idf/components/esp_system/startup_funcs.c", "/home/cedric/esp/esp-idf/components/esp_system/system_time.c", "/home/cedric/esp/esp-idf/components/esp_system/stack_check.c", "/home/cedric/esp/esp-idf/components/esp_system/ubsan.c", "/home/cedric/esp/esp-idf/components/esp_system/int_wdt.c", "/home/cedric/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/home/cedric/esp/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/home/cedric/esp/esp-idf/components/esp_system/port/cpu_start.c", "/home/cedric/esp/esp-idf/components/esp_system/port/panic_handler.c", "/home/cedric/esp/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/cedric/esp/esp-idf/components/esp_system/port/image_process.c", "/home/cedric/esp/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/cedric/esp/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/highint_hdl.S", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/clk.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/system_internal.c", "/home/cedric/esp/esp-idf/components/esp_system/port/soc/esp32/cache_err_int.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_timer": {
@@ -594,7 +594,7 @@
             "priv_reqs": [ "esp_hal_timg", "esp_hal_systimer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_timer/libesp_timer.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_timer/libesp_timer.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/esp_timer/src/esp_timer.c", "/home/cedric/esp/esp-idf/components/esp_timer/src/esp_timer_init.c", "/home/cedric/esp/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/home/cedric/esp/esp-idf/components/esp_timer/src/system_time.c", "/home/cedric/esp/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/home/cedric/esp/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c" ],
             "include_dirs": [ "include" ]
         },
@@ -639,7 +639,7 @@
             "priv_reqs": [ "esp_hal_systimer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/freertos/libfreertos.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/freertos/libfreertos.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/freertos/heap_idf.c", "/home/cedric/esp/esp-idf/components/freertos/app_startup.c", "/home/cedric/esp/esp-idf/components/freertos/port_common.c", "/home/cedric/esp/esp-idf/components/freertos/port_systick.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c", "/home/cedric/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c", "/home/cedric/esp/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/home/cedric/esp/esp-idf/components/freertos/esp_additions/idf_additions.c" ],
             "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
         },
@@ -654,7 +654,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/hal/libhal.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/hal/libhal.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/hal/hal_utils.c", "/home/cedric/esp/esp-idf/components/hal/efuse_hal.c", "/home/cedric/esp/esp-idf/components/hal/esp32/efuse_hal.c", "/home/cedric/esp/esp-idf/components/hal/mmu_hal.c", "/home/cedric/esp/esp-idf/components/hal/esp32/cache_hal_esp32.c", "/home/cedric/esp/esp-idf/components/hal/color_hal.c" ],
             "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
@@ -669,7 +669,7 @@
             "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/heap/libheap.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/heap/libheap.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/heap/heap_caps_base.c", "/home/cedric/esp/esp-idf/components/heap/heap_caps.c", "/home/cedric/esp/esp-idf/components/heap/heap_caps_init.c", "/home/cedric/esp/esp-idf/components/heap/multi_heap.c", "/home/cedric/esp/esp-idf/components/heap/tlsf/tlsf.c", "/home/cedric/esp/esp-idf/components/heap/port/memory_layout_utils.c", "/home/cedric/esp/esp-idf/components/heap/port/esp32/memory_layout.c" ],
             "include_dirs": [ "include", "tlsf" ]
         },
@@ -684,7 +684,7 @@
             "priv_reqs": [ "hal", "soc", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/log/liblog.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/log/liblog.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/log/src/os/log_timestamp.c", "/home/cedric/esp/esp-idf/components/log/src/log_timestamp_common.c", "/home/cedric/esp/esp-idf/components/log/src/os/log_lock.c", "/home/cedric/esp/esp-idf/components/log/src/buffer/log_buffers.c", "/home/cedric/esp/esp-idf/components/log/src/os/util.c", "/home/cedric/esp/esp-idf/components/log/src/util.c", "/home/cedric/esp/esp-idf/components/log/src/log_format_text.c", "/home/cedric/esp/esp-idf/components/log/src/log_print.c", "/home/cedric/esp/esp-idf/components/log/src/log.c", "/home/cedric/esp/esp-idf/components/log/src/os/log_write.c", "/home/cedric/esp/esp-idf/components/log/src/log_level/log_level.c", "/home/cedric/esp/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/home/cedric/esp/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/home/cedric/esp/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -692,15 +692,15 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main",
+            "dir": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main/main.c" ],
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/main/libmain.a",
+            "sources": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/main/main.c" ],
             "include_dirs": []
         },
         "mbedtls": {
@@ -714,8 +714,8 @@
             "priv_reqs": [ "soc", "esp_hw_support", "esp_pm", "esp_driver_dma" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/libmbedtls.a",
-            "sources": [ "/home/cedric/esp/esp-idf/components/mbedtls/port/esp_mem.c", "/home/cedric/esp/esp-idf/components/mbedtls/port/psa_crypto_storage/esp_psa_key_file.c", "/home/cedric/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/x509_crt_bundle.S" ],
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/libmbedtls.a",
+            "sources": [ "/home/cedric/esp/esp-idf/components/mbedtls/port/esp_mem.c", "/home/cedric/esp/esp-idf/components/mbedtls/port/psa_crypto_storage/esp_psa_key_file.c", "/home/cedric/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "mbedtls/tf-psa-crypto/core", "mbedtls/tf-psa-crypto/drivers/builtin/src/", "mbedtls/tf-psa-crypto/extras", "esp_crt_bundle/include", "/home/cedric/esp/esp-idf/components/mbedtls/port/psa_driver/include", "/home/cedric/esp/esp-idf/components/mbedtls/port/psa_crypto_storage/include" ]
         },
         "partition_table": {
@@ -744,7 +744,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/pthread/libpthread.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/pthread/libpthread.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/pthread/pthread.c", "/home/cedric/esp/esp-idf/components/pthread/pthread_cond_var.c", "/home/cedric/esp/esp-idf/components/pthread/pthread_local_storage.c", "/home/cedric/esp/esp-idf/components/pthread/pthread_rwlock.c", "/home/cedric/esp/esp-idf/components/pthread/pthread_semaphore.c" ],
             "include_dirs": [ "include" ]
         },
@@ -759,7 +759,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/soc/libsoc.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/soc/libsoc.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/soc/lldesc.c", "/home/cedric/esp/esp-idf/components/soc/dport_access_common.c", "/home/cedric/esp/esp-idf/components/soc/esp32/interrupts.c", "/home/cedric/esp/esp-idf/components/soc/esp32/gpio_periph.c", "/home/cedric/esp/esp-idf/components/soc/esp32/dport_access.c", "/home/cedric/esp/esp-idf/components/soc/esp32/mpi_periph.c", "/home/cedric/esp/esp-idf/components/soc/esp32/power_supply_periph.c" ],
             "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
         },
@@ -774,7 +774,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "esp_hal_gpio", "esp_driver_gpio", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/spi_flash/flash_brownout_hook.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/home/cedric/esp/esp-idf/components/spi_flash/memspi_host_driver.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_blockdev.c", "/home/cedric/esp/esp-idf/components/spi_flash/cache_utils.c", "/home/cedric/esp/esp-idf/components/spi_flash/flash_mmap.c", "/home/cedric/esp/esp-idf/components/spi_flash/flash_ops.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_wrap.c", "/home/cedric/esp/esp-idf/components/spi_flash/esp_flash_api.c", "/home/cedric/esp/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/home/cedric/esp/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -789,7 +789,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/xtensa/libxtensa.a",
+            "file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/xtensa/libxtensa.a",
             "sources": [ "/home/cedric/esp/esp-idf/components/xtensa/eri.c", "/home/cedric/esp/esp-idf/components/xtensa/xt_trax.c", "/home/cedric/esp/esp-idf/components/xtensa/xtensa_context.S", "/home/cedric/esp/esp-idf/components/xtensa/xtensa_intr_asm.S", "/home/cedric/esp/esp-idf/components/xtensa/xtensa_intr.c", "/home/cedric/esp/esp-idf/components/xtensa/xtensa_vectors.S" ],
             "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
@@ -884,7 +884,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build" ]
+            "include_dirs": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build" ]
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -936,7 +936,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build", "esp-tls-crypto" ]
+            "include_dirs": [ "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -2697,7 +2697,7 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/main",
+            "dir": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/main",
             "source": "project_components",
             "lib": "__idf_main",
             "reqs": [],
@@ -2708,11 +2708,11 @@
         }
     },
     "gdbinit_files": {
-        "01_symbols": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/symbols",
-        "02_prefix_map": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/prefix_map",
-        "03_py_extensions": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/py_extensions",
-        "04_connect": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/connect"
+        "01_symbols": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/symbols",
+        "02_prefix_map": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/prefix_map",
+        "03_py_extensions": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/py_extensions",
+        "04_connect": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/connect"
     },
     "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg",
-    "hints_file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/hints.yml"
+    "hints_file": "/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/hints.yml"
 }

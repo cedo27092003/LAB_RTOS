@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/include/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/cmake_install.cmake")
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/pkgconfig/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/include/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/pkgconfig/cmake_install.cmake")
 
 endif()
 

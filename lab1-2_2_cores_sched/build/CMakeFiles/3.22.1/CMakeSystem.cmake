@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "6.8.0-138-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/toolchain/toolchain-esp32.cmake")
+include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/toolchain/toolchain-esp32.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

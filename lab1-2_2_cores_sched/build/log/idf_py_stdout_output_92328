@@ -1,0 +1,135 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (710) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (711) boot: compile time Nov  7 2026 21:07:36[0m
+[0;32mI (711) boot: Multicore bootloader[0m
+[0;32mI (761) boot: chip revision: v3.0[0m
+[0;32mI (763) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (763) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (764) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (771) boot: Enabling RNG early entropy source...[0m
+[0;32mI (781) boot: Partition Table:[0m
+[0;32mI (781) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (781) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (781) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (782) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (786) boot: End of partition table[0m
+[0;32mI (834) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06d18h ( 27928) map[0m
+[0;32mI (861) esp_image: segment 1: paddr=00016d40 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (883) esp_image: segment 2: paddr=000195e4 vaddr=40080000 size=06a34h ( 27188) load[0m
+[0;32mI (909) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b028h ( 45096) map[0m
+[0;32mI (934) esp_image: segment 4: paddr=0002b050 vaddr=40086a34 size=03a1ch ( 14876) load[0m
+[0;32mI (954) esp_image: segment 5: paddr=0002ea74 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1009) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1009) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1028) cpu_start: Multicore app[0m
+[0;32mI (1737) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1741) cpu_start: Pro cpu start user code[0m
+[0;32mI (1741) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1741) app_init: Application information:[0m
+[0;32mI (1741) app_init: Project name:     hello_world[0m
+[0;32mI (1741) app_init: App version:      ffcc855-dirty[0m
+[0;32mI (1741) app_init: Compile time:     Nov  7 2026 21:07:59[0m
+[0;32mI (1742) app_init: ELF file SHA256:  dea1554e6...[0m
+[0;32mI (1742) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1742) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1742) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1742) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (1743) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1744) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1745) heap_init: At 3FFB3260 len 0002CDA0 (179 KiB): DRAM[0m
+[0;32mI (1745) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1745) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1745) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (1792) spi_flash: detected chip: winbond[0m
+[0;32mI (1803) spi_flash: flash io: dio[0m
+[0;32mI (1819) main_task: Started on CPU0[0m
+[0;32mI (1819) main_task: Calling app_main()[0m
+[0;36m0:0>	Start of app_main task, priority = 1[0m
+[38;5;100m0:1>	Start of Task 2 task, priority = 6[0m
+[38;5;93m0:0>	Start of Task 1 task, priority = 5[0m
+[38;5;93m1:0>	Running Task 1[0m
+[38;5;100m1:1>	Running Task 2[0m
+[38;5;100m6:1>	Running Task 2[0m
+[38;5;93m6:0>	Running Task 1[0m
+[38;5;93m12:0>	Running Task 1[0m
+[38;5;100m12:1>	Running Task 2[0m
+[38;5;93m17:0>	Running Task 1[0m
+[38;5;100m17:1>	Running Task 2[0m
+[38;5;93m22:0>	Running Task 1[0m
+[38;5;100m22:1>	Running Task 2[0m
+[38;5;100m27:1>	Running Task 2[0m
+[38;5;93m27:0>	Running Task 1[0m
+[38;5;100m32:1>	Running Task 2[0m
+[38;5;93m32:0>	Running Task 1[0m
+[38;5;100m37:1>	Running Task 2[0m
+[38;5;93m37:0>	Running Task 1[0m
+[38;5;100m42:1>	Running Task 2[0m
+[38;5;93m42:0>	Running Task 1[0m
+[38;5;100m47:1>	Running Task 2[0m
+[38;5;93m48:0>	Running Task 1[0m
+[38;5;100m52:1>	Running Task 2[0m
+[38;5;93m53:0>	Running Task 1[0m
+[38;5;100m58:1>	Running Task 2[0m
+[38;5;93m58:0>	Running Task 1[0m
+[38;5;100m63:1>	Running Task 2[0m
+[38;5;93m63:0>	Running Task 1[0m
+[38;5;100m68:1>	Running Task 2[0m
+[38;5;93m68:0>	Running Task 1[0m
+[38;5;100m73:1>	Running Task 2[0m
+[38;5;93m73:0>	Running Task 1[0m
+[38;5;100m78:1>	Running Task 2[0m
+[38;5;93m78:0>	Running Task 1[0m
+[38;5;100m83:1>	Running Task 2[0m
+[38;5;93m84:0>	Running Task 1[0m
+[38;5;100m88:1>	Running Task 2[0m
+[38;5;93m89:0>	Running Task 1[0m
+[38;5;100m93:1>	Running Task 2[0m
+[38;5;93m94:0>	Running Task 1[0m
+[38;5;100m98:1>	Running Task 2[0m
+[38;5;93m99:0>	Running Task 1[0m
+[38;5;100m103:1>	Running Task 2[0m
+[38;5;93m104:0>	Running Task 1[0m
+[38;5;100m109:1>	Running Task 2[0m
+[38;5;93m109:0>	Running Task 1[0m
+[38;5;100m114:1>	Running Task 2[0m
+[38;5;93m114:0>	Running Task 1[0m
+[38;5;100m119:1>	Running Task 2[0m
+[38;5;93m120:0>	Running Task 1[0m
+[38;5;100m124:1>	Running Task 2[0m
+[38;5;93m125:0>	Running Task 1[0m
+[38;5;100m129:1>	Running Task 2[0m
+[38;5;93m130:0>	Running Task 1[0m
+[38;5;100m134:1>	Running Task 2[0m
+[38;5;93m135:0>	Running Task 1[0m
+[38;5;100m140:1>	Running Task 2[0m
+[38;5;93m140:0>	Running Task 1[0m
+[38;5;100m145:1>	Running Task 2[0m
+[38;5;93m146:0>	Running Task 1[0m
+[38;5;100m150:1>	Running Task 2[0m
+[38;5;93m151:0>	Running Task 1[0m
+[38;5;100m155:1>	Running Task 2[0m
+[38;5;93m156:0>	Running Task 1[0m
+[38;5;100m160:1>	Running Task 2[0m
+[38;5;93m161:0>	Running Task 1[0m
+[38;5;100m165:1>	Running Task 2[0m
+[38;5;93m166:0>	Running Task 1[0m
+[38;5;100m171:1>	Running Task 2[0m
+[38;5;93m171:0>	Running Task 1[0m
+[38;5;100m176:1>	Running Task 2[0m
+[38;5;93m177:0>	Running Task 1[0m
+[38;5;100m181:1>	Running Task 2[0m
+[38;5;93m182:0>	Running Task 1[0m
+[38;5;100m186:1>	Running Task 2[0m
+[38;5;93m187:0>	Running Task 1[0m
+[38;5;100m191:1>	Running Task 2[0m
+[38;5;93m192:0>	Running Task 1[0m

@@ -1,9 +1,0 @@
-Command: cmake -G Ninja -B /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched
-NOTE: /home/cedric/esp/esp-idf/components/bootloader/Kconfig.projbuild:383: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
-NOTE: /home/cedric/esp/esp-idf/components/bootloader/Kconfig.projbuild:423: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
-NOTE: /home/cedric/esp/esp-idf/components/esp_hw_support/./lowpower/port/esp32p4/Kconfig.p4_rev3_mspi_workaround:6: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
-NOTE: /home/cedric/esp/esp-idf/components/esp_mm/Kconfig:20: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
-NOTE: /home/cedric/esp/esp-idf/components/esp_system/./port/soc/esp32/Kconfig.memory:24: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
-NOTE: Kconfig parser version: 1
-NOTE: Kconfig defaults policy: use sdkconfig
-NOTE: Status: Finished successfully

@@ -1,2 +1,2 @@
-source /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/symbols
-source /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/gdbinit/connect
+source /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/symbols
+source /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/gdbinit/connect

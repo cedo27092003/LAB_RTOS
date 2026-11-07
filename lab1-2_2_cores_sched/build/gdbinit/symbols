@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/bootloader.elf
+    add-symbol-file /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/hello_world.elf
+file /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/hello_world.elf

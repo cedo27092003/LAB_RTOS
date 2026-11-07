@@ -3,4 +3,4 @@
 -fno-builtin-memcpy
 -fno-builtin-memset
 -fno-builtin-bzero
-"-specs=/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/specs/picolibc.specs"
+"-specs=/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/specs/picolibc.specs"

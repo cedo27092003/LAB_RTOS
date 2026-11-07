@@ -1,4 +1,4 @@
-/* * Data converted from /home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

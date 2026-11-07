@@ -39,256 +39,256 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/xtensa/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/xtensa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_stdio/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_stdio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_dma/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_dma/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_gpspi/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_gpspi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_clock/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_clock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_mspi/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_mspi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_blockdev/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_blockdev/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_security/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_security/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/bootloader/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esptool_py/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esptool_py/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/partition_table/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/partition_table/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_app_format/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_app_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_bootloader_format/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_bootloader_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/app_update/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/app_update/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_partition/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_partition/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/efuse/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/efuse/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_timg/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_timg/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_systimer/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_systimer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_timer/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_timer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_security/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_security/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_driver_gpio/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_driver_gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_uart/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_uart/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_pm/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_pm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_mm/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_mm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_driver_dma/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_driver_dma/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/mbedtls/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_wdt/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_wdt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_i2s/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_i2s/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_ana_conv/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_ana_conv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_rtc_timer/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_rtc_timer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/bootloader_support/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/bootloader_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/spi_flash/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/spi_flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_usb_cdc_rom_console/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_usb_cdc_rom_console/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_system/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_system/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_common/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_rom/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_rom/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/hal/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/hal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/log/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/log/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/heap/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/heap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/soc/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_gpio/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_gpio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_usb/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_usb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_pmu/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_pmu/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_regi2c/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_regi2c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hal_touch_sens/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hal_touch_sens/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_hw_support/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_hw_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/freertos/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/freertos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/esp_libc/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/esp_libc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/pthread/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/pthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/cxx/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/cxx/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/esp-idf/main/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/esp-idf/main/cmake_install.cmake")
 endif()
 

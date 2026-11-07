@@ -101,7 +101,7 @@ void app_main(void) {
 	/* Create tasks. */
 	#if PINNED_TO_CORE == 0x00
 		xTaskCreatePinnedToCore(vTaskFunction,	"Task 1", STACK_SIZE, (void *)COLOR_PURPLE, T1_PRIO,	NULL,CORE_0);					
-		xTaskCreatePinnedToCore(vTaskFunction, "Task 2", STACK_SIZE, (void *)COLOR_OLIVE, T2_PRIO, NULL,CORE_0);
+		xTaskCreatePinnedToCore(vTaskFunction, "Task 2", STACK_SIZE, (void *)COLOR_OLIVE, T2_PRIO, NULL,CORE_1);
 	#elif PINNED_TO_CORE == 0x01
 		xTaskCreatePinnedToCore(vTaskFunction,	"Task 1", STACK_SIZE,	(void *)COLOR_PURPLE, T1_PRIO,	NULL,CORE_0);					
 		xTaskCreatePinnedToCore(vTaskFunction, "Task 2", STACK_SIZE, (void *)COLOR_OLIVE, T2_PRIO, NULL,CORE_1);

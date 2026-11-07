@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/esp-idf/esp_hw_support/port/esp32/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-1_1_core_sched/build/bootloader/esp-idf/esp_hw_support/modem/cmake_install.cmake")
+  include("/home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/esp-idf/esp_hw_support/modem/cmake_install.cmake")
 endif()
 
