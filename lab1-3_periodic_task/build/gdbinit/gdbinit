@@ -1,0 +1,2 @@
+source /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/gdbinit/symbols
+source /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/gdbinit/connect

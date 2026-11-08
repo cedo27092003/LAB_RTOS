@@ -1,0 +1,6 @@
+"-specs=/home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/bootloader/specs/picolibc.specs"
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero

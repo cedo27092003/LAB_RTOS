@@ -1,0 +1,17 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/bootloader && /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/bootloader/bootloader.bin
+Bootloader binary size 0x6640 bytes. 0x9c0 bytes (9%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+Skipping linker script generation, section names unchanged
+[5/7] Linking CXX executable hello_world.elf
+[6/7] Generating binary image from built executable
+esptool v5.6.0
+Creating ESP32 image...
+Merged 3 ELF sections.
+Successfully created ESP32 image.
+Generated /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/hello_world.bin
+[7/7] cd /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build && /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/partition_table/partition-table.bin /home/cedric/esp-prjects/LAB_RTOS/lab1-3_periodic_task/build/hello_world.bin
+hello_world.bin binary size 0x1eb80 bytes. Smallest app partition is 0x100000 bytes. 0xe1480 bytes (88%) free.
