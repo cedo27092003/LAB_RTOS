@@ -33,7 +33,7 @@
 /**************************************/
 /* Scenarios                          */
 
-#define DIFF_PRIORITY
+//#define DIFF_PRIORITY
 
 #define PINNED_TO_CORE 0x00
 //   0x00: Task 1: Core 0, Task 2: Core 0
@@ -41,7 +41,7 @@
 //   0x10: Task 1: Core 1, Task 2: Core 0
 //   0x11: Task 1: Core 1, Task 2: Core 1
 
-//#define ADD_TASK3
+#define ADD_TASK3
 //#define IDLE_HOOKS
 //#define TASK_DELAY
 
@@ -53,6 +53,7 @@
 /* Default stack size for tasks */
 static const uint32_t STACK_SIZE = 4000;
 
+
 #ifdef DIFF_PRIORITY
 static const uint32_t T1_PRIO = 5;
 static const uint32_t T2_PRIO = 6;
@@ -60,6 +61,7 @@ static const uint32_t T2_PRIO = 6;
 static const uint32_t T1_PRIO = 5;
 static const uint32_t T2_PRIO = 5;
 #endif
+
 
 #ifdef IDLE_HOOKS
 
@@ -100,7 +102,7 @@ void app_main(void) {
 
 	/* Create tasks. */
 	#if PINNED_TO_CORE == 0x00
-		xTaskCreatePinnedToCore(vTaskFunction,	"Task 1", STACK_SIZE, (void *)COLOR_PURPLE, T1_PRIO,	NULL,CORE_0);					
+		xTaskCreatePinnedToCore(vTaskFunction,	"Task 1", STACK_SIZE, (void *)COLOR_PURPLE, T1_PRIO,	NULL,CORE_1);					
 		xTaskCreatePinnedToCore(vTaskFunction, "Task 2", STACK_SIZE, (void *)COLOR_OLIVE, T2_PRIO, NULL,CORE_1);
 	#elif PINNED_TO_CORE == 0x01
 		xTaskCreatePinnedToCore(vTaskFunction,	"Task 1", STACK_SIZE,	(void *)COLOR_PURPLE, T1_PRIO,	NULL,CORE_0);					

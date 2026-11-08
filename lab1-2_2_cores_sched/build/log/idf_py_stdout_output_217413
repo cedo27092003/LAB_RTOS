@@ -1,0 +1,144 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab1-2_2_cores_sched/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (686) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (687) boot: compile time Nov  7 2026 21:07:36[0m
+[0;32mI (687) boot: Multicore bootloader[0m
+[0;32mI (742) boot: chip revision: v3.0[0m
+[0;32mI (745) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (746) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (746) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (759) boot: Enabling RNG early entropy source...[0m
+[0;32mI (770) boot: Partition Table:[0m
+[0;32mI (770) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (770) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (771) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (771) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (776) boot: End of partition table[0m
+[0;32mI (830) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06d38h ( 27960) map[0m
+[0;32mI (856) esp_image: segment 1: paddr=00016d60 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (877) esp_image: segment 2: paddr=00019604 vaddr=40080000 size=06a14h ( 27156) load[0m
+[0;32mI (903) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b044h ( 45124) map[0m
+[0;32mI (927) esp_image: segment 4: paddr=0002b06c vaddr=40086a14 size=03a3ch ( 14908) load[0m
+[0;32mI (950) esp_image: segment 5: paddr=0002eab0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1017) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1017) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1037) cpu_start: Multicore app[0m
+[0;32mI (1766) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1770) cpu_start: Pro cpu start user code[0m
+[0;32mI (1770) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1771) app_init: Application information:[0m
+[0;32mI (1771) app_init: Project name:     hello_world[0m
+[0;32mI (1771) app_init: App version:      9a6360e-dirty[0m
+[0;32mI (1771) app_init: Compile time:     Nov  8 2026 11:07:06[0m
+[0;32mI (1771) app_init: ELF file SHA256:  9cd9242b4...[0m
+[0;32mI (1771) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1772) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1772) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1772) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (1773) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1774) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1774) heap_init: At 3FFB3260 len 0002CDA0 (179 KiB): DRAM[0m
+[0;32mI (1774) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1774) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1775) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (1821) spi_flash: detected chip: winbond[0m
+[0;32mI (1830) spi_flash: flash io: dio[0m
+[0;32mI (1849) main_task: Started on CPU0[0m
+[0;32mI (1849) main_task: Calling app_main()[0m
+[0;36m0:0>	Start of app_main task, priority = 1[0m
+[38;5;93m0:1>	Start of Task 1 task, priority = 5[0m
+[38;5;208m0:0>	Start of Task 3 task, priority = 1[0m
+[38;5;100m0:1>	Start of Task 2 task, priority = 5[0m
+[38;5;100m0:1>	Running Task 2[0m
+[38;5;208m1:0>	Running Task 3[0m
+[38;5;93m0:1>	Running Task 1[0m
+[38;5;208m6:0>	Running Task 3[0m
+[38;5;100m11:1>	Running Task 2[0m
+[38;5;208m11:0>	Running Task 3[0m
+[38;5;93m12:1>	Running Task 1[0m
+[38;5;208m17:0>	Running Task 3[0m
+[0;36m21:0>	Running app_main task![0m
+[38;5;100m21:1>	Running Task 2[0m
+[38;5;208m22:0>	Running Task 3[0m
+[38;5;93m23:1>	Running Task 1[0m
+[38;5;208m27:0>	Running Task 3[0m
+[38;5;100m31:1>	Running Task 2[0m
+[38;5;208m32:0>	Running Task 3[0m
+[38;5;93m33:1>	Running Task 1[0m
+[38;5;208m38:0>	Running Task 3[0m
+[0;36m42:0>	Running app_main task![0m
+[38;5;100m42:1>	Running Task 2[0m
+[38;5;208m43:0>	Running Task 3[0m
+[38;5;93m44:1>	Running Task 1[0m
+[38;5;208m48:0>	Running Task 3[0m
+[38;5;100m52:1>	Running Task 2[0m
+[38;5;208m53:0>	Running Task 3[0m
+[38;5;93m54:1>	Running Task 1[0m
+[38;5;208m59:0>	Running Task 3[0m
+[0;36m63:0>	Running app_main task![0m
+[38;5;100m63:1>	Running Task 2[0m
+[38;5;208m64:0>	Running Task 3[0m
+[38;5;93m64:1>	Running Task 1[0m
+[38;5;208m69:0>	Running Task 3[0m
+[38;5;100m73:1>	Running Task 2[0m
+[38;5;208m74:0>	Running Task 3[0m
+[38;5;93m75:1>	Running Task 1[0m
+[38;5;208m80:0>	Running Task 3[0m
+[38;5;100m83:1>	Running Task 2[0m
+[0;36m84:0>	Running app_main task![0m
+[38;5;93m85:1>	Running Task 1[0m
+[38;5;208m85:0>	Running Task 3[0m
+[38;5;208m90:0>	Running Task 3[0m
+[38;5;100m94:1>	Running Task 2[0m
+[38;5;208m96:0>	Running Task 3[0m
+[38;5;93m96:1>	Running Task 1[0m
+[38;5;208m101:0>	Running Task 3[0m
+[38;5;100m104:1>	Running Task 2[0m
+[0;36m105:0>	Running app_main task![0m
+[38;5;93m106:1>	Running Task 1[0m
+[38;5;208m106:0>	Running Task 3[0m
+[38;5;208m112:0>	Running Task 3[0m
+[38;5;100m115:1>	Running Task 2[0m
+[38;5;93m116:1>	Running Task 1[0m
+[38;5;208m117:0>	Running Task 3[0m
+[38;5;208m122:0>	Running Task 3[0m
+[38;5;100m125:1>	Running Task 2[0m
+[0;36m126:0>	Running app_main task![0m
+[38;5;93m127:1>	Running Task 1[0m
+[38;5;208m127:0>	Running Task 3[0m
+[38;5;208m133:0>	Running Task 3[0m
+[38;5;100m135:1>	Running Task 2[0m
+[38;5;93m137:1>	Running Task 1[0m
+[38;5;208m138:0>	Running Task 3[0m
+[38;5;208m143:0>	Running Task 3[0m
+[38;5;100m146:1>	Running Task 2[0m
+[0;36m147:0>	Running app_main task![0m
+[38;5;93m148:1>	Running Task 1[0m
+[38;5;208m148:0>	Running Task 3[0m
+[38;5;208m154:0>	Running Task 3[0m
+[38;5;100m156:1>	Running Task 2[0m
+[38;5;93m158:1>	Running Task 1[0m
+[38;5;208m159:0>	Running Task 3[0m
+[38;5;208m164:0>	Running Task 3[0m
+[38;5;100m167:1>	Running Task 2[0m
+[0;36m168:0>	Running app_main task![0m
+[38;5;93m169:1>	Running Task 1[0m
+[38;5;208m169:0>	Running Task 3[0m
+[38;5;208m175:0>	Running Task 3[0m
+[38;5;100m177:1>	Running Task 2[0m
+[38;5;93m179:1>	Running Task 1[0m
+[38;5;208m180:0>	Running Task 3[0m
+[38;5;208m185:0>	Running Task 3[0m
+[38;5;100m187:1>	Running Task 2[0m
+[0;36m189:0>	Running app_main task![0m
+[38;5;93m190:1>	Running Task 1[0m
+[38;5;208m190:0>	Running Task 3[0m
