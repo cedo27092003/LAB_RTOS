@@ -13,9 +13,16 @@
 #include "my_helper_fct.h"
 
 static const char* TAG = "MsgQ_MAIN";
+static const uint32_t TI_PRIO ;
+static const uint32_t T2_PRIO ;
+static const uint32_t T3_PRIO ;
+
+static const uint32_t STACK_SIZE = 4000;
 
 /* The task functions declaration */
-
+vTask1Function(void *pvParameters);
+vTask2Function(void *pvParameters);
+vTask3Function(void *pvParameters);
 
 /* Message Queue declaration */
 
@@ -54,4 +61,3 @@ void vTask2(void *pvParameters){
 void vTask3(void *pvParameters) {
 
 }
-
