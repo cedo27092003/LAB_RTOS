@@ -1,0 +1,2 @@
+source /home/cedric/esp-prjects/LAB_RTOS/lab2_msg_queue_and_interrupt/build/bootloader/gdbinit/symbols
+source /home/cedric/esp-prjects/LAB_RTOS/lab2_msg_queue_and_interrupt/build/bootloader/gdbinit/connect

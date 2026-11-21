@@ -1,0 +1,107 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab2_msg_queue_and_interrupt/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab2_msg_queue_and_interrupt/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (685) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (686) boot: compile time Nov 20 2026 15:49:31[0m
+[0;32mI (686) boot: Multicore bootloader[0m
+[0;32mI (736) boot: chip revision: v3.0[0m
+[0;32mI (740) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (740) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (740) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (752) boot: Enabling RNG early entropy source...[0m
+[0;32mI (766) boot: Partition Table:[0m
+[0;32mI (766) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (766) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (767) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (767) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (771) boot: End of partition table[0m
+[0;32mI (821) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06dc8h ( 28104) map[0m
+[0;32mI (848) esp_image: segment 1: paddr=00016df0 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (868) esp_image: segment 2: paddr=00019694 vaddr=40080000 size=06984h ( 27012) load[0m
+[0;32mI (893) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b27ch ( 45692) map[0m
+[0;32mI (920) esp_image: segment 4: paddr=0002b2a4 vaddr=40086984 size=03acch ( 15052) load[0m
+[0;32mI (943) esp_image: segment 5: paddr=0002ed78 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1027) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1028) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1046) cpu_start: Multicore app[0m
+[0;32mI (1785) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1789) cpu_start: Pro cpu start user code[0m
+[0;32mI (1789) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1790) app_init: Application information:[0m
+[0;32mI (1790) app_init: Project name:     hello_world[0m
+[0;32mI (1790) app_init: App version:      6012491-dirty[0m
+[0;32mI (1790) app_init: Compile time:     Nov 20 2026 15:49:54[0m
+[0;32mI (1790) app_init: ELF file SHA256:  4a2825a11...[0m
+[0;32mI (1791) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1791) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1791) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1791) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (1792) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1793) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1794) heap_init: At 3FFB3268 len 0002CD98 (179 KiB): DRAM[0m
+[0;32mI (1794) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1794) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1794) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (1842) spi_flash: detected chip: winbond[0m
+[0;32mI (1852) spi_flash: flash io: dio[0m
+[0;32mI (1870) main_task: Started on CPU0[0m
+[0;32mI (1870) main_task: Calling app_main()[0m
+[38;5;93m0:0>	Start of Task 1 task, priority = 2[0m
+[38;5;208m0:0>	Task 3 , mess = 1[0m
+[38;5;93m0:0>	Task 1 added amessage to MsgQ : 1 [0m
+[38;5;208m50:0>	Task 3 , mess = 2[0m
+[38;5;93m50:0>	Task 1 added amessage to MsgQ : 2 [0m
+[38;5;208m100:0>	Task 3 , mess = 3[0m
+[38;5;93m100:0>	Task 1 added amessage to MsgQ : 3 [0m
+[38;5;208m150:0>	Task 3 , mess = 4[0m
+[38;5;93m150:0>	Task 1 added amessage to MsgQ : 4 [0m
+[38;5;208m200:0>	Task 3 , mess = 5[0m
+[38;5;93m200:0>	Task 1 added amessage to MsgQ : 5 [0m
+[38;5;208m250:0>	Task 3 , mess = 6[0m
+[38;5;93m250:0>	Task 1 added amessage to MsgQ : 6 [0m
+[38;5;208m300:0>	Task 3 , mess = 7[0m
+[38;5;93m300:0>	Task 1 added amessage to MsgQ : 7 [0m
+[38;5;208m350:0>	Task 3 , mess = 8[0m
+[38;5;93m350:0>	Task 1 added amessage to MsgQ : 8 [0m
+[38;5;208m400:0>	Task 3 , mess = 9[0m
+[38;5;93m400:0>	Task 1 added amessage to MsgQ : 9 [0m
+[38;5;208m450:0>	Task 3 , mess = 10[0m
+[38;5;93m450:0>	Task 1 added amessage to MsgQ : 10 [0m
+[38;5;208m500:0>	Task 3 , mess = 11[0m
+[38;5;93m500:0>	Task 1 added amessage to MsgQ : 11 [0m
+[38;5;208m550:0>	Task 3 , mess = 12[0m
+[38;5;93m550:0>	Task 1 added amessage to MsgQ : 12 [0m
+[38;5;208m600:0>	Task 3 , mess = 13[0m
+[38;5;93m600:0>	Task 1 added amessage to MsgQ : 13 [0m
+[38;5;208m650:0>	Task 3 , mess = 14[0m
+[38;5;93m650:0>	Task 1 added amessage to MsgQ : 14 [0m
+[38;5;208m700:0>	Task 3 , mess = 15[0m
+[38;5;93m700:0>	Task 1 added amessage to MsgQ : 15 [0m
+[38;5;208m750:0>	Task 3 , mess = 16[0m
+[38;5;93m750:0>	Task 1 added amessage to MsgQ : 16 [0m
+[38;5;208m800:0>	Task 3 , mess = 17[0m
+[38;5;93m800:0>	Task 1 added amessage to MsgQ : 17 [0m
+[38;5;208m850:0>	Task 3 , mess = 18[0m
+[38;5;93m850:0>	Task 1 added amessage to MsgQ : 18 [0m
+[38;5;208m900:0>	Task 3 , mess = 19[0m
+[38;5;93m900:0>	Task 1 added amessage to MsgQ : 19 [0m
+[38;5;208m950:0>	Task 3 , mess = 20[0m
+[38;5;93m950:0>	Task 1 added amessage to MsgQ : 20 [0m
+[38;5;208m1000:0>	Task 3 , mess = 21[0m
+[38;5;93m1000:0>	Task 1 added amessage to MsgQ : 21 [0m
+[38;5;208m1050:0>	Task 3 , mess = 22[0m
+[38;5;93m1050:0>	Task 1 added amessage to MsgQ : 22 [0m
+[38;5;208m1100:0>	Task 3 , mess = 23[0m
+[38;5;93m1100:0>	Task 1 added amessage to MsgQ : 23 [0m
+[38;5;208m1150:0>	Task 3 , mess = 24[0m
+[38;5;93m1150:0>	Task 1 added amessage to MsgQ : 24 [0m
+[38;5;208m1200:0>	Task 3 , mess = 25[0m
+[38;5;93m1200:0>	Task 1 added amessage to MsgQ : 25 [0m
