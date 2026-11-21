@@ -90,12 +90,17 @@ void vCounterTask(void *pvParameters) {
 
 			// DISPLAYC macro (COLOR_RED) number of items (messages) IF greater than 1
 			if(nbItems > 1){
-				DISPLAYC(COLOR_RED, "Button pushed");
+				DISPLAYC(COLOR_RED, "number of Item : %lf", nbItems);
 			}
 			
 
 			// Waiting for push button signal is 1 again (test every 20 ms using vTaskDelay)
+			while (gpio_get_level(PIN_PUSH_BUTTON) == 0)
+			{
+				vTaskDelay(pdMS_TO_TICKS(20));
 
+			}
+			
 
 			// DISPLAY (COLOR_PURPLE) "Button released"
 			DISPLAYC(COLOR_PURPLE, "Button released");
@@ -104,6 +109,11 @@ void vCounterTask(void *pvParameters) {
 			gpio_set_level(PIN_LED, (uxCount % 2));
 
 			// Waiting for push button signal is 0 again (test every 20 ms using vTaskDelay)
+			while (gpio_get_level(PIN_PUSH_BUTTON) == 1)
+			{
+				vTaskDelay(pdMS_TO_TICKS(20));
+
+			}
 
 		}
 		else {
