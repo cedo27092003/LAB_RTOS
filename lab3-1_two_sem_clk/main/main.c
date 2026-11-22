@@ -41,7 +41,10 @@ const uint32_t INC_TABLE_TASK_PRIORITY = 3;
 const uint32_t DEC_TABLE_TASK_PRIORITY = 4;
 
 /* Communications */
-SemaphoreHandle_t xSemClk;
+//SemaphoreHandle_t xSemClk;
+SemaphoreHandle_t xSemIncTab;
+SemaphoreHandle_t xSemDecTab;
+
 
 /* Tasks */
 void vTaskTimer(void *pvParameters);
@@ -53,8 +56,6 @@ const uint32_t constNumber = 10;
 
 /* Datas */
 int Table[TABLE_SIZE];
-const int MAX_SEM = 2;
-const int  INITAL_VALUE = 0;
 
 /* Main function */
 void app_main(void) {
@@ -65,8 +66,11 @@ void app_main(void) {
 	}
 
 	/* Create semaphore */
-	xSemClk = xSemaphoreCreateCounting(MAX_SEM, INITAL_VALUE);
-	if(xSemClk == NULL) {
+	xSemIncTab = xSemaphoreCreateBinary();
+	xSemDecTab = xSemaphoreCreateBinary();
+
+
+	if(xSemIncTab == NULL || xSemDecTab == NULL) {
 		DISPLAYEC(TAG, COLOR_RED, "Semaphore cannot be created");
 		return;
 	}
@@ -97,10 +101,10 @@ void vTaskTimer(void *pvParameters) {
 
 		COMPUTE_IN_TIME_MS(20);
 		DISPLAYC(pcColor, "%s : give first Clk", pcTaskName);	
-		xSemaphoreGive(xSemClk);
+		xSemaphoreGive(xSemIncTab);
 
 		DISPLAYC(pcColor, "%s : give second Clk", pcTaskName);
-		xSemaphoreGive(xSemClk);
+		xSemaphoreGive(xSemDecTab);
 		
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(250));
 	}
@@ -116,7 +120,7 @@ void vTaskIncTable(void *pvParameters) {
 
 	for ( ; ; )
 	{
-		xSemaphoreTake(xSemClk, portMAX_DELAY);
+		xSemaphoreTake(xSemIncTab, portMAX_DELAY);
 
 		if(ActivationNumber==0) {
 			DISPLAYC(pcColor, "%s is starting computation", pcTaskName);	
@@ -143,7 +147,7 @@ void vTaskDecTable(void *pvParameters) {
 	uint32_t index;
 
 	for( ; ;) {
-		xSemaphoreTake(xSemClk, portMAX_DELAY);
+		xSemaphoreTake(xSemDecTab, portMAX_DELAY);
 
 		DISPLAYC(pcColor, "%s is starting computation", pcTaskName);
 		for(index=0; index<TABLE_SIZE; index++){
