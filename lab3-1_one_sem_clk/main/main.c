@@ -36,12 +36,12 @@ static const char *TAG = "SEM";
 #define TABLE_SIZE 4300
 
 /* Task Priority */
-const uint32_t TIMER_TASK_PRIORITY = ?;
+const uint32_t TIMER_TASK_PRIORITY = 5;
 const uint32_t INC_TABLE_TASK_PRIORITY = ?;
 const uint32_t DEC_TABLE_TASK_PRIORITY = ?;
 
 /* Communications */
-
+SemaphoreHandle_t xSemClk;
 
 /* Tasks */
 void vTaskTimer(void *pvParameters);
@@ -78,6 +78,21 @@ void app_main(void) {
 /*-----------------------------------------------------------*/
 
 void vTaskTimer(void *pvParameters) {
+	const char *pcTaskName = pcTAskGetName(NULL);
+	const char *pcColor = (pvParameters!=NULL) ? (const char *)pvParameters : "";
+	TickType_t xLastWakeTime = xTaskGetTickCount();
+
+	for( ; ; ){
+		COMPUTE_IN_TIME_MS(20);
+		DISPLAYC(COLOR_PURPLE, "Task Timer : give first Clk");	
+		xSemaphoreGive(xSemClk);
+
+		DISPLAYC(COLOR_PURPLE, "Task Timer : give second Clk");
+		xSemaphoreGive(xSemClk);
+		
+		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(250));
+	}
+
 
 }
 
