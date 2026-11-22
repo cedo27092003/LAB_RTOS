@@ -1,0 +1,1277 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab3-3_mutex/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab3-3_mutex/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (684) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (685) boot: compile time Nov 22 2026 15:37:34[0m
+[0;32mI (685) boot: Multicore bootloader[0m
+[0;32mI (738) boot: chip revision: v3.0[0m
+[0;32mI (741) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (741) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (741) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (748) boot: Enabling RNG early entropy source...[0m
+[0;32mI (760) boot: Partition Table:[0m
+[0;32mI (760) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (760) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (761) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (761) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (765) boot: End of partition table[0m
+[0;32mI (815) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06ee8h ( 28392) map[0m
+[0;32mI (841) esp_image: segment 1: paddr=00016f10 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (860) esp_image: segment 2: paddr=000197b4 vaddr=40080000 size=06864h ( 26724) load[0m
+[0;32mI (888) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b33ch ( 45884) map[0m
+[0;32mI (913) esp_image: segment 4: paddr=0002b364 vaddr=40086864 size=03bech ( 15340) load[0m
+[0;32mI (934) esp_image: segment 5: paddr=0002ef58 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1010) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1010) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1028) cpu_start: Multicore app[0m
+[0;32mI (1757) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1761) cpu_start: Pro cpu start user code[0m
+[0;32mI (1761) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1761) app_init: Application information:[0m
+[0;32mI (1762) app_init: Project name:     hello_world[0m
+[0;32mI (1762) app_init: App version:      420bb6d-dirty[0m
+[0;32mI (1762) app_init: Compile time:     Nov 22 2026 15:37:42[0m
+[0;32mI (1762) app_init: ELF file SHA256:  3f5e3ec14...[0m
+[0;32mI (1762) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1762) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1763) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1763) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (1764) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1765) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1765) heap_init: At 3FFB7598 len 00028A68 (162 KiB): DRAM[0m
+[0;32mI (1765) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1765) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1766) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (1813) spi_flash: detected chip: winbond[0m
+[0;32mI (1819) spi_flash: flash io: dio[0m
+[0;32mI (1838) main_task: Started on CPU0[0m
+[0;32mI (1838) main_task: Calling app_main()[0m
+[38;5;93m0:0>	vTaskTimer : give first Clk[0m
+[38;5;93m0:0>	vTaskTimer : give second Clk[0m
+[38;5;208m0:0>	vTaskInspector is checking[0m
+[38;5;208m1:0>	Task Inspector ended its checking.[0m
+[38;5;208m1:0>	vTaskInspector is checking[0m
+[38;5;208m1:0>	Task Inspector ended its checking.[0m
+[38;5;208m1:0>	vTaskInspector is checking[0m
+[38;5;208m1:0>	Task Inspector ended its checking.[0m
+[38;5;208m1:0>	vTaskInspector is checking[0m
+[38;5;208m2:0>	Task Inspector ended its checking.[0m
+[38;5;208m2:0>	vTaskInspector is checking[0m
+[38;5;208m2:0>	Task Inspector ended its checking.[0m
+[38;5;208m2:0>	vTaskInspector is checking[0m
+[38;5;208m2:0>	Task Inspector ended its checking.[0m
+[38;5;208m2:0>	vTaskInspector is checking[0m
+[38;5;208m3:0>	Task Inspector ended its checking.[0m
+[38;5;208m3:0>	vTaskInspector is checking[0m
+[38;5;208m3:0>	Task Inspector ended its checking.[0m
+[38;5;208m3:0>	vTaskInspector is checking[0m
+[38;5;208m3:0>	Task Inspector ended its checking.[0m
+[38;5;208m3:0>	vTaskInspector is checking[0m
+[38;5;208m4:0>	Task Inspector ended its checking.[0m
+[38;5;208m4:0>	vTaskInspector is checking[0m
+[38;5;208m4:0>	Task Inspector ended its checking.[0m
+[38;5;208m4:0>	vTaskInspector is checking[0m
+[38;5;208m4:0>	Task Inspector ended its checking.[0m
+[38;5;208m4:0>	vTaskInspector is checking[0m
+[38;5;208m5:0>	Task Inspector ended its checking.[0m
+[38;5;208m5:0>	vTaskInspector is checking[0m
+[38;5;208m5:0>	Task Inspector ended its checking.[0m
+[38;5;208m5:0>	vTaskInspector is checking[0m
+[38;5;208m5:0>	Task Inspector ended its checking.[0m
+[38;5;208m5:0>	vTaskInspector is checking[0m
+[38;5;208m5:0>	Task Inspector ended its checking.[0m
+[38;5;208m5:0>	vTaskInspector is checking[0m
+[38;5;208m6:0>	Task Inspector ended its checking.[0m
+[38;5;208m6:0>	vTaskInspector is checking[0m
+[38;5;208m6:0>	Task Inspector ended its checking.[0m
+[38;5;208m6:0>	vTaskInspector is checking[0m
+[38;5;208m6:0>	Task Inspector ended its checking.[0m
+[38;5;208m6:0>	vTaskInspector is checking[0m
+[38;5;208m7:0>	Task Inspector ended its checking.[0m
+[38;5;208m7:0>	vTaskInspector is checking[0m
+[38;5;208m7:0>	Task Inspector ended its checking.[0m
+[38;5;208m7:0>	vTaskInspector is checking[0m
+[38;5;208m7:0>	Task Inspector ended its checking.[0m
+[38;5;208m7:0>	vTaskInspector is checking[0m
+[38;5;208m8:0>	Task Inspector ended its checking.[0m
+[38;5;208m8:0>	vTaskInspector is checking[0m
+[38;5;208m8:0>	Task Inspector ended its checking.[0m
+[38;5;208m8:0>	vTaskInspector is checking[0m
+[38;5;208m8:0>	Task Inspector ended its checking.[0m
+[38;5;208m8:0>	vTaskInspector is checking[0m
+[38;5;208m9:0>	Task Inspector ended its checking.[0m
+[38;5;208m9:0>	vTaskInspector is checking[0m
+[38;5;208m9:0>	Task Inspector ended its checking.[0m
+[38;5;208m9:0>	vTaskInspector is checking[0m
+[38;5;208m9:0>	Task Inspector ended its checking.[0m
+[38;5;208m9:0>	vTaskInspector is checking[0m
+[38;5;208m9:0>	Task Inspector ended its checking.[0m
+[38;5;208m10:0>	vTaskInspector is checking[0m
+[38;5;208m10:0>	Task Inspector ended its checking.[0m
+[38;5;208m10:0>	vTaskInspector is checking[0m
+[38;5;208m10:0>	Task Inspector ended its checking.[0m
+[38;5;208m10:0>	vTaskInspector is checking[0m
+[38;5;208m10:0>	Task Inspector ended its checking.[0m
+[38;5;208m10:0>	vTaskInspector is checking[0m
+[38;5;208m11:0>	Task Inspector ended its checking.[0m
+[38;5;208m11:0>	vTaskInspector is checking[0m
+[38;5;208m11:0>	Task Inspector ended its checking.[0m
+[38;5;208m11:0>	vTaskInspector is checking[0m
+[38;5;208m11:0>	Task Inspector ended its checking.[0m
+[38;5;208m11:0>	vTaskInspector is checking[0m
+[38;5;208m12:0>	Task Inspector ended its checking.[0m
+[38;5;208m12:0>	vTaskInspector is checking[0m
+[38;5;208m12:0>	Task Inspector ended its checking.[0m
+[38;5;208m12:0>	vTaskInspector is checking[0m
+[38;5;208m12:0>	Task Inspector ended its checking.[0m
+[38;5;208m12:0>	vTaskInspector is checking[0m
+[38;5;208m12:0>	Task Inspector ended its checking.[0m
+[38;5;208m12:0>	vTaskInspector is checking[0m
+[38;5;208m13:0>	Task Inspector ended its checking.[0m
+[38;5;208m13:0>	vTaskInspector is checking[0m
+[38;5;208m13:0>	Task Inspector ended its checking.[0m
+[38;5;208m13:0>	vTaskInspector is checking[0m
+[38;5;208m13:0>	Task Inspector ended its checking.[0m
+[38;5;208m13:0>	vTaskInspector is checking[0m
+[38;5;208m14:0>	Task Inspector ended its checking.[0m
+[38;5;208m14:0>	vTaskInspector is checking[0m
+[38;5;208m14:0>	Task Inspector ended its checking.[0m
+[38;5;208m14:0>	vTaskInspector is checking[0m
+[38;5;208m14:0>	Task Inspector ended its checking.[0m
+[38;5;208m14:0>	vTaskInspector is checking[0m
+[38;5;208m14:0>	Task Inspector ended its checking.[0m
+[38;5;208m14:0>	vTaskInspector is checking[0m
+[38;5;208m15:0>	Task Inspector ended its checking.[0m
+[38;5;208m15:0>	vTaskInspector is checking[0m
+[38;5;208m15:0>	Task Inspector ended its checking.[0m
+[38;5;208m15:0>	vTaskInspector is checking[0m
+[38;5;208m15:0>	Task Inspector ended its checking.[0m
+[38;5;208m15:0>	vTaskInspector is checking[0m
+[38;5;208m16:0>	Task Inspector ended its checking.[0m
+[38;5;208m16:0>	vTaskInspector is checking[0m
+[38;5;208m16:0>	Task Inspector ended its checking.[0m
+[38;5;208m16:0>	vTaskInspector is checking[0m
+[38;5;208m16:0>	Task Inspector ended its checking.[0m
+[38;5;208m16:0>	vTaskInspector is checking[0m
+[38;5;208m16:0>	Task Inspector ended its checking.[0m
+[38;5;208m16:0>	vTaskInspector is checking[0m
+[38;5;208m17:0>	Task Inspector ended its checking.[0m
+[38;5;208m17:0>	vTaskInspector is checking[0m
+[38;5;208m17:0>	Task Inspector ended its checking.[0m
+[38;5;208m17:0>	vTaskInspector is checking[0m
+[38;5;208m17:0>	Task Inspector ended its checking.[0m
+[38;5;208m17:0>	vTaskInspector is checking[0m
+[38;5;208m18:0>	Task Inspector ended its checking.[0m
+[38;5;208m18:0>	vTaskInspector is checking[0m
+[38;5;208m18:0>	Task Inspector ended its checking.[0m
+[38;5;208m18:0>	vTaskInspector is checking[0m
+[38;5;208m18:0>	Task Inspector ended its checking.[0m
+[38;5;208m18:0>	vTaskInspector is checking[0m
+[38;5;208m18:0>	Task Inspector ended its checking.[0m
+[38;5;208m18:0>	vTaskInspector is checking[0m
+[38;5;208m19:0>	Task Inspector ended its checking.[0m
+[38;5;208m19:0>	vTaskInspector is checking[0m
+[38;5;208m19:0>	Task Inspector ended its checking.[0m
+[38;5;208m19:0>	vTaskInspector is checking[0m
+[38;5;208m19:0>	Task Inspector ended its checking.[0m
+[38;5;208m19:0>	vTaskInspector is checking[0m
+[38;5;208m20:0>	Task Inspector ended its checking.[0m
+[38;5;208m20:0>	vTaskInspector is checking[0m
+[38;5;208m20:0>	Task Inspector ended its checking.[0m
+[38;5;208m20:0>	vTaskInspector is checking[0m
+[38;5;208m20:0>	Task Inspector ended its checking.[0m
+[38;5;208m20:0>	vTaskInspector is checking[0m
+[38;5;208m21:0>	Task Inspector ended its checking.[0m
+[38;5;208m21:0>	vTaskInspector is checking[0m
+[38;5;208m21:0>	Task Inspector ended its checking.[0m
+[38;5;208m21:0>	vTaskInspector is checking[0m
+[38;5;208m21:0>	Task Inspector ended its checking.[0m
+[38;5;208m21:0>	vTaskInspector is checking[0m
+[38;5;208m21:0>	Task Inspector ended its checking.[0m
+[38;5;208m21:0>	vTaskInspector is checking[0m
+[38;5;208m22:0>	Task Inspector ended its checking.[0m
+[38;5;208m22:0>	vTaskInspector is checking[0m
+[38;5;208m22:0>	Task Inspector ended its checking.[0m
+[38;5;208m22:0>	vTaskInspector is checking[0m
+[38;5;208m22:0>	Task Inspector ended its checking.[0m
+[38;5;208m22:0>	vTaskInspector is checking[0m
+[38;5;208m23:0>	Task Inspector ended its checking.[0m
+[38;5;208m23:0>	vTaskInspector is checking[0m
+[38;5;208m23:0>	Task Inspector ended its checking.[0m
+[38;5;208m23:0>	vTaskInspector is checking[0m
+[38;5;208m23:0>	Task Inspector ended its checking.[0m
+[38;5;208m23:0>	vTaskInspector is checking[0m
+[38;5;208m24:0>	Task Inspector ended its checking.[0m
+[38;5;208m24:0>	vTaskInspector is checking[0m
+[38;5;208m24:0>	Task Inspector ended its checking.[0m
+[38;5;208m24:0>	vTaskInspector is checking[0m
+[38;5;208m24:0>	Task Inspector ended its checking.[0m
+[38;5;208m24:0>	vTaskInspector is checking[0m
+[38;5;208m24:0>	Task Inspector ended its checking.[0m
+[38;5;208m24:0>	vTaskInspector is checking[0m
+[38;5;93m25:0>	vTaskTimer : give first Clk[0m
+[38;5;93m25:0>	vTaskTimer : give second Clk[0m
+[38;5;208m25:0>	Task Inspector ended its checking.[0m
+[38;5;208m25:0>	vTaskInspector is checking[0m
+[38;5;208m25:0>	Task Inspector ended its checking.[0m
+[38;5;208m25:0>	vTaskInspector is checking[0m
+[38;5;208m25:0>	Task Inspector ended its checking.[0m
+[38;5;208m25:0>	vTaskInspector is checking[0m
+[38;5;208m26:0>	Task Inspector ended its checking.[0m
+[38;5;208m26:0>	vTaskInspector is checking[0m
+[38;5;208m26:0>	Task Inspector ended its checking.[0m
+[38;5;208m26:0>	vTaskInspector is checking[0m
+[38;5;208m26:0>	Task Inspector ended its checking.[0m
+[38;5;208m26:0>	vTaskInspector is checking[0m
+[38;5;208m27:0>	Task Inspector ended its checking.[0m
+[38;5;208m27:0>	vTaskInspector is checking[0m
+[38;5;208m27:0>	Task Inspector ended its checking.[0m
+[38;5;208m27:0>	vTaskInspector is checking[0m
+[38;5;208m27:0>	Task Inspector ended its checking.[0m
+[38;5;208m27:0>	vTaskInspector is checking[0m
+[38;5;208m27:0>	Task Inspector ended its checking.[0m
+[38;5;208m27:0>	vTaskInspector is checking[0m
+[38;5;208m28:0>	Task Inspector ended its checking.[0m
+[38;5;208m28:0>	vTaskInspector is checking[0m
+[38;5;208m28:0>	Task Inspector ended its checking.[0m
+[38;5;208m28:0>	vTaskInspector is checking[0m
+[38;5;208m28:0>	Task Inspector ended its checking.[0m
+[38;5;208m28:0>	vTaskInspector is checking[0m
+[38;5;208m29:0>	Task Inspector ended its checking.[0m
+[38;5;208m29:0>	vTaskInspector is checking[0m
+[38;5;208m29:0>	Task Inspector ended its checking.[0m
+[38;5;208m29:0>	vTaskInspector is checking[0m
+[38;5;208m29:0>	Task Inspector ended its checking.[0m
+[38;5;208m29:0>	vTaskInspector is checking[0m
+[38;5;208m30:0>	Task Inspector ended its checking.[0m
+[38;5;208m30:0>	vTaskInspector is checking[0m
+[38;5;208m30:0>	Task Inspector ended its checking.[0m
+[38;5;208m30:0>	vTaskInspector is checking[0m
+[38;5;208m30:0>	Task Inspector ended its checking.[0m
+[38;5;208m30:0>	vTaskInspector is checking[0m
+[38;5;208m30:0>	Task Inspector ended its checking.[0m
+[38;5;208m30:0>	vTaskInspector is checking[0m
+[38;5;208m31:0>	Task Inspector ended its checking.[0m
+[38;5;208m31:0>	vTaskInspector is checking[0m
+[38;5;208m31:0>	Task Inspector ended its checking.[0m
+[38;5;208m31:0>	vTaskInspector is checking[0m
+[38;5;208m31:0>	Task Inspector ended its checking.[0m
+[38;5;208m31:0>	vTaskInspector is checking[0m
+[38;5;208m32:0>	Task Inspector ended its checking.[0m
+[38;5;208m32:0>	vTaskInspector is checking[0m
+[38;5;208m32:0>	Task Inspector ended its checking.[0m
+[38;5;208m32:0>	vTaskInspector is checking[0m
+[38;5;208m32:0>	Task Inspector ended its checking.[0m
+[38;5;208m32:0>	vTaskInspector is checking[0m
+[38;5;208m33:0>	Task Inspector ended its checking.[0m
+[38;5;208m33:0>	vTaskInspector is checking[0m
+[38;5;208m33:0>	Task Inspector ended its checking.[0m
+[38;5;208m33:0>	vTaskInspector is checking[0m
+[38;5;208m33:0>	Task Inspector ended its checking.[0m
+[38;5;208m33:0>	vTaskInspector is checking[0m
+[38;5;208m33:0>	Task Inspector ended its checking.[0m
+[38;5;208m33:0>	vTaskInspector is checking[0m
+[38;5;208m34:0>	Task Inspector ended its checking.[0m
+[38;5;208m34:0>	vTaskInspector is checking[0m
+[38;5;208m34:0>	Task Inspector ended its checking.[0m
+[38;5;208m34:0>	vTaskInspector is checking[0m
+[38;5;208m34:0>	Task Inspector ended its checking.[0m
+[38;5;208m34:0>	vTaskInspector is checking[0m
+[38;5;208m35:0>	Task Inspector ended its checking.[0m
+[38;5;208m35:0>	vTaskInspector is checking[0m
+[38;5;208m35:0>	Task Inspector ended its checking.[0m
+[38;5;208m35:0>	vTaskInspector is checking[0m
+[38;5;208m35:0>	Task Inspector ended its checking.[0m
+[38;5;208m35:0>	vTaskInspector is checking[0m
+[38;5;208m35:0>	Task Inspector ended its checking.[0m
+[38;5;208m35:0>	vTaskInspector is checking[0m
+[38;5;208m36:0>	Task Inspector ended its checking.[0m
+[38;5;208m36:0>	vTaskInspector is checking[0m
+[38;5;208m36:0>	Task Inspector ended its checking.[0m
+[38;5;208m36:0>	vTaskInspector is checking[0m
+[38;5;208m36:0>	Task Inspector ended its checking.[0m
+[38;5;208m36:0>	vTaskInspector is checking[0m
+[38;5;208m37:0>	Task Inspector ended its checking.[0m
+[38;5;208m37:0>	vTaskInspector is checking[0m
+[38;5;208m37:0>	Task Inspector ended its checking.[0m
+[38;5;208m37:0>	vTaskInspector is checking[0m
+[38;5;208m37:0>	Task Inspector ended its checking.[0m
+[38;5;208m37:0>	vTaskInspector is checking[0m
+[38;5;208m37:0>	Task Inspector ended its checking.[0m
+[38;5;208m38:0>	vTaskInspector is checking[0m
+[38;5;208m38:0>	Task Inspector ended its checking.[0m
+[38;5;208m38:0>	vTaskInspector is checking[0m
+[38;5;208m38:0>	Task Inspector ended its checking.[0m
+[38;5;208m38:0>	vTaskInspector is checking[0m
+[38;5;208m38:0>	Task Inspector ended its checking.[0m
+[38;5;208m38:0>	vTaskInspector is checking[0m
+[38;5;208m39:0>	Task Inspector ended its checking.[0m
+[38;5;208m39:0>	vTaskInspector is checking[0m
+[38;5;208m39:0>	Task Inspector ended its checking.[0m
+[38;5;208m39:0>	vTaskInspector is checking[0m
+[38;5;208m39:0>	Task Inspector ended its checking.[0m
+[38;5;208m39:0>	vTaskInspector is checking[0m
+[38;5;208m40:0>	Task Inspector ended its checking.[0m
+[38;5;208m40:0>	vTaskInspector is checking[0m
+[38;5;208m40:0>	Task Inspector ended its checking.[0m
+[38;5;208m40:0>	vTaskInspector is checking[0m
+[38;5;208m40:0>	Task Inspector ended its checking.[0m
+[38;5;208m40:0>	vTaskInspector is checking[0m
+[38;5;208m41:0>	Task Inspector ended its checking.[0m
+[38;5;208m41:0>	vTaskInspector is checking[0m
+[38;5;208m41:0>	Task Inspector ended its checking.[0m
+[38;5;208m41:0>	vTaskInspector is checking[0m
+[38;5;208m41:0>	Task Inspector ended its checking.[0m
+[38;5;208m41:0>	vTaskInspector is checking[0m
+[38;5;208m41:0>	Task Inspector ended its checking.[0m
+[38;5;208m41:0>	vTaskInspector is checking[0m
+[38;5;208m42:0>	Task Inspector ended its checking.[0m
+[38;5;208m42:0>	vTaskInspector is checking[0m
+[38;5;208m42:0>	Task Inspector ended its checking.[0m
+[38;5;208m42:0>	vTaskInspector is checking[0m
+[38;5;208m42:0>	Task Inspector ended its checking.[0m
+[38;5;208m43:0>	vTaskInspector is checking[0m
+[38;5;208m43:0>	Task Inspector ended its checking.[0m
+[38;5;208m43:0>	vTaskInspector is checking[0m
+[38;5;208m43:0>	Task Inspector ended its checking.[0m
+[38;5;208m43:0>	vTaskInspector is checking[0m
+[38;5;208m43:0>	Task Inspector ended its checking.[0m
+[38;5;208m43:0>	vTaskInspector is checking[0m
+[38;5;208m44:0>	Task Inspector ended its checking.[0m
+[38;5;208m44:0>	vTaskInspector is checking[0m
+[38;5;208m44:0>	Task Inspector ended its checking.[0m
+[38;5;208m44:0>	vTaskInspector is checking[0m
+[38;5;208m44:0>	Task Inspector ended its checking.[0m
+[38;5;208m44:0>	vTaskInspector is checking[0m
+[38;5;208m45:0>	Task Inspector ended its checking.[0m
+[38;5;208m45:0>	vTaskInspector is checking[0m
+[38;5;208m45:0>	Task Inspector ended its checking.[0m
+[38;5;208m45:0>	vTaskInspector is checking[0m
+[38;5;208m45:0>	Task Inspector ended its checking.[0m
+[38;5;208m45:0>	vTaskInspector is checking[0m
+[38;5;208m46:0>	Task Inspector ended its checking.[0m
+[38;5;208m46:0>	vTaskInspector is checking[0m
+[38;5;208m46:0>	Task Inspector ended its checking.[0m
+[38;5;208m46:0>	vTaskInspector is checking[0m
+[38;5;208m46:0>	Task Inspector ended its checking.[0m
+[38;5;208m46:0>	vTaskInspector is checking[0m
+[38;5;208m47:0>	Task Inspector ended its checking.[0m
+[38;5;208m47:0>	vTaskInspector is checking[0m
+[38;5;208m47:0>	Task Inspector ended its checking.[0m
+[38;5;208m47:0>	vTaskInspector is checking[0m
+[38;5;208m47:0>	Task Inspector ended its checking.[0m
+[38;5;208m47:0>	vTaskInspector is checking[0m
+[38;5;208m47:0>	Task Inspector ended its checking.[0m
+[38;5;208m48:0>	vTaskInspector is checking[0m
+[38;5;208m48:0>	Task Inspector ended its checking.[0m
+[38;5;208m48:0>	vTaskInspector is checking[0m
+[38;5;208m48:0>	Task Inspector ended its checking.[0m
+[38;5;208m48:0>	vTaskInspector is checking[0m
+[38;5;208m48:0>	Task Inspector ended its checking.[0m
+[38;5;208m48:0>	vTaskInspector is checking[0m
+[38;5;208m49:0>	Task Inspector ended its checking.[0m
+[38;5;208m49:0>	vTaskInspector is checking[0m
+[38;5;208m49:0>	Task Inspector ended its checking.[0m
+[38;5;208m49:0>	vTaskInspector is checking[0m
+[38;5;208m49:0>	Task Inspector ended its checking.[0m
+[38;5;208m49:0>	vTaskInspector is checking[0m
+[38;5;208m49:0>	Task Inspector ended its checking.[0m
+[38;5;208m49:0>	vTaskInspector is checking[0m
+[38;5;93m50:0>	vTaskTimer : give first Clk[0m
+[38;5;93m50:0>	vTaskTimer : give second Clk[0m
+[38;5;208m50:0>	Task Inspector ended its checking.[0m
+[38;5;208m50:0>	vTaskInspector is checking[0m
+[38;5;208m50:0>	Task Inspector ended its checking.[0m
+[38;5;208m50:0>	vTaskInspector is checking[0m
+[38;5;208m50:0>	Task Inspector ended its checking.[0m
+[38;5;208m50:0>	vTaskInspector is checking[0m
+[38;5;208m51:0>	Task Inspector ended its checking.[0m
+[38;5;208m51:0>	vTaskInspector is checking[0m
+[38;5;208m51:0>	Task Inspector ended its checking.[0m
+[38;5;208m51:0>	vTaskInspector is checking[0m
+[38;5;208m51:0>	Task Inspector ended its checking.[0m
+[38;5;208m51:0>	vTaskInspector is checking[0m
+[38;5;208m52:0>	Task Inspector ended its checking.[0m
+[38;5;208m52:0>	vTaskInspector is checking[0m
+[38;5;208m52:0>	Task Inspector ended its checking.[0m
+[38;5;208m52:0>	vTaskInspector is checking[0m
+[38;5;208m52:0>	Task Inspector ended its checking.[0m
+[38;5;208m52:0>	vTaskInspector is checking[0m
+[38;5;208m53:0>	Task Inspector ended its checking.[0m
+[38;5;208m53:0>	vTaskInspector is checking[0m
+[38;5;208m53:0>	Task Inspector ended its checking.[0m
+[38;5;208m53:0>	vTaskInspector is checking[0m
+[38;5;208m53:0>	Task Inspector ended its checking.[0m
+[38;5;208m53:0>	vTaskInspector is checking[0m
+[38;5;208m54:0>	Task Inspector ended its checking.[0m
+[38;5;208m54:0>	vTaskInspector is checking[0m
+[38;5;208m54:0>	Task Inspector ended its checking.[0m
+[38;5;208m54:0>	vTaskInspector is checking[0m
+[38;5;208m54:0>	Task Inspector ended its checking.[0m
+[38;5;208m54:0>	vTaskInspector is checking[0m
+[38;5;208m55:0>	Task Inspector ended its checking.[0m
+[38;5;208m55:0>	vTaskInspector is checking[0m
+[38;5;208m55:0>	Task Inspector ended its checking.[0m
+[38;5;208m55:0>	vTaskInspector is checking[0m
+[38;5;208m55:0>	Task Inspector ended its checking.[0m
+[38;5;208m55:0>	vTaskInspector is checking[0m
+[38;5;208m56:0>	Task Inspector ended its checking.[0m
+[38;5;208m56:0>	vTaskInspector is checking[0m
+[38;5;208m56:0>	Task Inspector ended its checking.[0m
+[38;5;208m56:0>	vTaskInspector is checking[0m
+[38;5;208m56:0>	Task Inspector ended its checking.[0m
+[38;5;208m56:0>	vTaskInspector is checking[0m
+[38;5;208m57:0>	Task Inspector ended its checking.[0m
+[38;5;208m57:0>	vTaskInspector is checking[0m
+[38;5;208m57:0>	Task Inspector ended its checking.[0m
+[38;5;208m57:0>	vTaskInspector is checking[0m
+[38;5;208m57:0>	Task Inspector ended its checking.[0m
+[38;5;208m57:0>	vTaskInspector is checking[0m
+[38;5;208m57:0>	Task Inspector ended its checking.[0m
+[38;5;208m58:0>	vTaskInspector is checking[0m
+[38;5;208m58:0>	Task Inspector ended its checking.[0m
+[38;5;208m58:0>	vTaskInspector is checking[0m
+[38;5;208m58:0>	Task Inspector ended its checking.[0m
+[38;5;208m58:0>	vTaskInspector is checking[0m
+[38;5;208m58:0>	Task Inspector ended its checking.[0m
+[38;5;208m58:0>	vTaskInspector is checking[0m
+[38;5;208m59:0>	Task Inspector ended its checking.[0m
+[38;5;208m59:0>	vTaskInspector is checking[0m
+[38;5;208m59:0>	Task Inspector ended its checking.[0m
+[38;5;208m59:0>	vTaskInspector is checking[0m
+[38;5;208m59:0>	Task Inspector ended its checking.[0m
+[38;5;208m59:0>	vTaskInspector is checking[0m
+[38;5;208m60:0>	Task Inspector ended its checking.[0m
+[38;5;208m60:0>	vTaskInspector is checking[0m
+[38;5;208m60:0>	Task Inspector ended its checking.[0m
+[38;5;208m60:0>	vTaskInspector is checking[0m
+[38;5;208m60:0>	Task Inspector ended its checking.[0m
+[38;5;208m60:0>	vTaskInspector is checking[0m
+[38;5;208m60:0>	Task Inspector ended its checking.[0m
+[38;5;208m60:0>	vTaskInspector is checking[0m
+[38;5;208m61:0>	Task Inspector ended its checking.[0m
+[38;5;208m61:0>	vTaskInspector is checking[0m
+[38;5;208m61:0>	Task Inspector ended its checking.[0m
+[38;5;208m61:0>	vTaskInspector is checking[0m
+[38;5;208m61:0>	Task Inspector ended its checking.[0m
+[38;5;208m61:0>	vTaskInspector is checking[0m
+[38;5;208m62:0>	Task Inspector ended its checking.[0m
+[38;5;208m62:0>	vTaskInspector is checking[0m
+[38;5;208m62:0>	Task Inspector ended its checking.[0m
+[38;5;208m62:0>	vTaskInspector is checking[0m
+[38;5;208m62:0>	Task Inspector ended its checking.[0m
+[38;5;208m62:0>	vTaskInspector is checking[0m
+[38;5;208m62:0>	Task Inspector ended its checking.[0m
+[38;5;208m62:0>	vTaskInspector is checking[0m
+[38;5;208m63:0>	Task Inspector ended its checking.[0m
+[38;5;208m63:0>	vTaskInspector is checking[0m
+[38;5;208m63:0>	Task Inspector ended its checking.[0m
+[38;5;208m63:0>	vTaskInspector is checking[0m
+[38;5;208m63:0>	Task Inspector ended its checking.[0m
+[38;5;208m63:0>	vTaskInspector is checking[0m
+[38;5;208m63:0>	Task Inspector ended its checking.[0m
+[38;5;208m63:0>	vTaskInspector is checking[0m
+[38;5;208m64:0>	Task Inspector ended its checking.[0m
+[38;5;208m64:0>	vTaskInspector is checking[0m
+[38;5;208m64:0>	Task Inspector ended its checking.[0m
+[38;5;208m64:0>	vTaskInspector is checking[0m
+[38;5;208m64:0>	Task Inspector ended its checking.[0m
+[38;5;208m64:0>	vTaskInspector is checking[0m
+[38;5;208m65:0>	Task Inspector ended its checking.[0m
+[38;5;208m65:0>	vTaskInspector is checking[0m
+[38;5;208m65:0>	Task Inspector ended its checking.[0m
+[38;5;208m65:0>	vTaskInspector is checking[0m
+[38;5;208m65:0>	Task Inspector ended its checking.[0m
+[38;5;208m65:0>	vTaskInspector is checking[0m
+[38;5;208m65:0>	Task Inspector ended its checking.[0m
+[38;5;208m66:0>	vTaskInspector is checking[0m
+[38;5;208m66:0>	Task Inspector ended its checking.[0m
+[38;5;208m66:0>	vTaskInspector is checking[0m
+[38;5;208m66:0>	Task Inspector ended its checking.[0m
+[38;5;208m66:0>	vTaskInspector is checking[0m
+[38;5;208m66:0>	Task Inspector ended its checking.[0m
+[38;5;208m66:0>	vTaskInspector is checking[0m
+[38;5;208m67:0>	Task Inspector ended its checking.[0m
+[38;5;208m67:0>	vTaskInspector is checking[0m
+[38;5;208m67:0>	Task Inspector ended its checking.[0m
+[38;5;208m67:0>	vTaskInspector is checking[0m
+[38;5;208m67:0>	Task Inspector ended its checking.[0m
+[38;5;208m67:0>	vTaskInspector is checking[0m
+[38;5;208m68:0>	Task Inspector ended its checking.[0m
+[38;5;208m68:0>	vTaskInspector is checking[0m
+[38;5;208m68:0>	Task Inspector ended its checking.[0m
+[38;5;208m68:0>	vTaskInspector is checking[0m
+[38;5;208m68:0>	Task Inspector ended its checking.[0m
+[38;5;208m68:0>	vTaskInspector is checking[0m
+[38;5;208m68:0>	Task Inspector ended its checking.[0m
+[38;5;208m68:0>	vTaskInspector is checking[0m
+[38;5;208m69:0>	Task Inspector ended its checking.[0m
+[38;5;208m69:0>	vTaskInspector is checking[0m
+[38;5;208m69:0>	Task Inspector ended its checking.[0m
+[38;5;208m69:0>	vTaskInspector is checking[0m
+[38;5;208m69:0>	Task Inspector ended its checking.[0m
+[38;5;208m69:0>	vTaskInspector is checking[0m
+[38;5;208m70:0>	Task Inspector ended its checking.[0m
+[38;5;208m70:0>	vTaskInspector is checking[0m
+[38;5;208m70:0>	Task Inspector ended its checking.[0m
+[38;5;208m70:0>	vTaskInspector is checking[0m
+[38;5;208m70:0>	Task Inspector ended its checking.[0m
+[38;5;208m70:0>	vTaskInspector is checking[0m
+[38;5;208m71:0>	Task Inspector ended its checking.[0m
+[38;5;208m71:0>	vTaskInspector is checking[0m
+[38;5;208m71:0>	Task Inspector ended its checking.[0m
+[38;5;208m71:0>	vTaskInspector is checking[0m
+[38;5;208m71:0>	Task Inspector ended its checking.[0m
+[38;5;208m71:0>	vTaskInspector is checking[0m
+[38;5;208m71:0>	Task Inspector ended its checking.[0m
+[38;5;208m72:0>	vTaskInspector is checking[0m
+[38;5;208m72:0>	Task Inspector ended its checking.[0m
+[38;5;208m72:0>	vTaskInspector is checking[0m
+[38;5;208m72:0>	Task Inspector ended its checking.[0m
+[38;5;208m72:0>	vTaskInspector is checking[0m
+[38;5;208m72:0>	Task Inspector ended its checking.[0m
+[38;5;208m72:0>	vTaskInspector is checking[0m
+[38;5;208m73:0>	Task Inspector ended its checking.[0m
+[38;5;208m73:0>	vTaskInspector is checking[0m
+[38;5;208m73:0>	Task Inspector ended its checking.[0m
+[38;5;208m73:0>	vTaskInspector is checking[0m
+[38;5;208m73:0>	Task Inspector ended its checking.[0m
+[38;5;208m73:0>	vTaskInspector is checking[0m
+[38;5;208m74:0>	Task Inspector ended its checking.[0m
+[38;5;208m74:0>	vTaskInspector is checking[0m
+[38;5;208m74:0>	Task Inspector ended its checking.[0m
+[38;5;208m74:0>	vTaskInspector is checking[0m
+[38;5;208m74:0>	Task Inspector ended its checking.[0m
+[38;5;208m74:0>	vTaskInspector is checking[0m
+[38;5;93m75:0>	vTaskTimer : give first Clk[0m
+[38;5;93m75:0>	vTaskTimer : give second Clk[0m
+[38;5;208m75:0>	Task Inspector ended its checking.[0m
+[38;5;208m75:0>	vTaskInspector is checking[0m
+[38;5;208m75:0>	Task Inspector ended its checking.[0m
+[38;5;208m75:0>	vTaskInspector is checking[0m
+[38;5;208m75:0>	Task Inspector ended its checking.[0m
+[38;5;208m75:0>	vTaskInspector is checking[0m
+[38;5;208m76:0>	Task Inspector ended its checking.[0m
+[38;5;208m76:0>	vTaskInspector is checking[0m
+[38;5;208m76:0>	Task Inspector ended its checking.[0m
+[38;5;208m76:0>	vTaskInspector is checking[0m
+[38;5;208m76:0>	Task Inspector ended its checking.[0m
+[38;5;208m76:0>	vTaskInspector is checking[0m
+[38;5;208m77:0>	Task Inspector ended its checking.[0m
+[38;5;208m77:0>	vTaskInspector is checking[0m
+[38;5;208m77:0>	Task Inspector ended its checking.[0m
+[38;5;208m77:0>	vTaskInspector is checking[0m
+[38;5;208m77:0>	Task Inspector ended its checking.[0m
+[38;5;208m77:0>	vTaskInspector is checking[0m
+[38;5;208m78:0>	Task Inspector ended its checking.[0m
+[38;5;208m78:0>	vTaskInspector is checking[0m
+[38;5;208m78:0>	Task Inspector ended its checking.[0m
+[38;5;208m78:0>	vTaskInspector is checking[0m
+[38;5;208m78:0>	Task Inspector ended its checking.[0m
+[38;5;208m78:0>	vTaskInspector is checking[0m
+[38;5;208m78:0>	Task Inspector ended its checking.[0m
+[38;5;208m78:0>	vTaskInspector is checking[0m
+[38;5;208m79:0>	Task Inspector ended its checking.[0m
+[38;5;208m79:0>	vTaskInspector is checking[0m
+[38;5;208m79:0>	Task Inspector ended its checking.[0m
+[38;5;208m79:0>	vTaskInspector is checking[0m
+[38;5;208m79:0>	Task Inspector ended its checking.[0m
+[38;5;208m79:0>	vTaskInspector is checking[0m
+[38;5;208m80:0>	Task Inspector ended its checking.[0m
+[38;5;208m80:0>	vTaskInspector is checking[0m
+[38;5;208m80:0>	Task Inspector ended its checking.[0m
+[38;5;208m80:0>	vTaskInspector is checking[0m
+[38;5;208m80:0>	Task Inspector ended its checking.[0m
+[38;5;208m80:0>	vTaskInspector is checking[0m
+[38;5;208m81:0>	Task Inspector ended its checking.[0m
+[38;5;208m81:0>	vTaskInspector is checking[0m
+[38;5;208m81:0>	Task Inspector ended its checking.[0m
+[38;5;208m81:0>	vTaskInspector is checking[0m
+[38;5;208m81:0>	Task Inspector ended its checking.[0m
+[38;5;208m81:0>	vTaskInspector is checking[0m
+[38;5;208m82:0>	Task Inspector ended its checking.[0m
+[38;5;208m82:0>	vTaskInspector is checking[0m
+[38;5;208m82:0>	Task Inspector ended its checking.[0m
+[38;5;208m82:0>	vTaskInspector is checking[0m
+[38;5;208m82:0>	Task Inspector ended its checking.[0m
+[38;5;208m82:0>	vTaskInspector is checking[0m
+[38;5;208m82:0>	Task Inspector ended its checking.[0m
+[38;5;208m82:0>	vTaskInspector is checking[0m
+[38;5;208m83:0>	Task Inspector ended its checking.[0m
+[38;5;208m83:0>	vTaskInspector is checking[0m
+[38;5;208m83:0>	Task Inspector ended its checking.[0m
+[38;5;208m83:0>	vTaskInspector is checking[0m
+[38;5;208m83:0>	Task Inspector ended its checking.[0m
+[38;5;208m83:0>	vTaskInspector is checking[0m
+[38;5;208m84:0>	Task Inspector ended its checking.[0m
+[38;5;208m84:0>	vTaskInspector is checking[0m
+[38;5;208m84:0>	Task Inspector ended its checking.[0m
+[38;5;208m84:0>	vTaskInspector is checking[0m
+[38;5;208m84:0>	Task Inspector ended its checking.[0m
+[38;5;208m84:0>	vTaskInspector is checking[0m
+[38;5;208m85:0>	Task Inspector ended its checking.[0m
+[38;5;208m85:0>	vTaskInspector is checking[0m
+[38;5;208m85:0>	Task Inspector ended its checking.[0m
+[38;5;208m85:0>	vTaskInspector is checking[0m
+[38;5;208m85:0>	Task Inspector ended its checking.[0m
+[38;5;208m85:0>	vTaskInspector is checking[0m
+[38;5;208m86:0>	Task Inspector ended its checking.[0m
+[38;5;208m86:0>	vTaskInspector is checking[0m
+[38;5;208m86:0>	Task Inspector ended its checking.[0m
+[38;5;208m86:0>	vTaskInspector is checking[0m
+[38;5;208m86:0>	Task Inspector ended its checking.[0m
+[38;5;208m86:0>	vTaskInspector is checking[0m
+[38;5;208m86:0>	Task Inspector ended its checking.[0m
+[38;5;208m86:0>	vTaskInspector is checking[0m
+[38;5;208m87:0>	Task Inspector ended its checking.[0m
+[38;5;208m87:0>	vTaskInspector is checking[0m
+[38;5;208m87:0>	Task Inspector ended its checking.[0m
+[38;5;208m87:0>	vTaskInspector is checking[0m
+[38;5;208m87:0>	Task Inspector ended its checking.[0m
+[38;5;208m87:0>	vTaskInspector is checking[0m
+[38;5;208m88:0>	Task Inspector ended its checking.[0m
+[38;5;208m88:0>	vTaskInspector is checking[0m
+[38;5;208m88:0>	Task Inspector ended its checking.[0m
+[38;5;208m88:0>	vTaskInspector is checking[0m
+[38;5;208m88:0>	Task Inspector ended its checking.[0m
+[38;5;208m88:0>	vTaskInspector is checking[0m
+[38;5;208m89:0>	Task Inspector ended its checking.[0m
+[38;5;208m89:0>	vTaskInspector is checking[0m
+[38;5;208m89:0>	Task Inspector ended its checking.[0m
+[38;5;208m89:0>	vTaskInspector is checking[0m
+[38;5;208m89:0>	Task Inspector ended its checking.[0m
+[38;5;208m89:0>	vTaskInspector is checking[0m
+[38;5;208m89:0>	Task Inspector ended its checking.[0m
+[38;5;208m89:0>	vTaskInspector is checking[0m
+[38;5;208m90:0>	Task Inspector ended its checking.[0m
+[38;5;208m90:0>	vTaskInspector is checking[0m
+[38;5;208m90:0>	Task Inspector ended its checking.[0m
+[38;5;208m90:0>	vTaskInspector is checking[0m
+[38;5;208m90:0>	Task Inspector ended its checking.[0m
+[38;5;208m90:0>	vTaskInspector is checking[0m
+[38;5;208m91:0>	Task Inspector ended its checking.[0m
+[38;5;208m91:0>	vTaskInspector is checking[0m
+[38;5;208m91:0>	Task Inspector ended its checking.[0m
+[38;5;208m91:0>	vTaskInspector is checking[0m
+[38;5;208m91:0>	Task Inspector ended its checking.[0m
+[38;5;208m91:0>	vTaskInspector is checking[0m
+[38;5;208m92:0>	Task Inspector ended its checking.[0m
+[38;5;208m92:0>	vTaskInspector is checking[0m
+[38;5;208m92:0>	Task Inspector ended its checking.[0m
+[38;5;208m92:0>	vTaskInspector is checking[0m
+[38;5;208m92:0>	Task Inspector ended its checking.[0m
+[38;5;208m92:0>	vTaskInspector is checking[0m
+[38;5;208m92:0>	Task Inspector ended its checking.[0m
+[38;5;208m92:0>	vTaskInspector is checking[0m
+[38;5;208m93:0>	Task Inspector ended its checking.[0m
+[38;5;208m93:0>	vTaskInspector is checking[0m
+[38;5;208m93:0>	Task Inspector ended its checking.[0m
+[38;5;208m93:0>	vTaskInspector is checking[0m
+[38;5;208m93:0>	Task Inspector ended its checking.[0m
+[38;5;208m93:0>	vTaskInspector is checking[0m
+[38;5;208m94:0>	Task Inspector ended its checking.[0m
+[38;5;208m94:0>	vTaskInspector is checking[0m
+[38;5;208m94:0>	Task Inspector ended its checking.[0m
+[38;5;208m94:0>	vTaskInspector is checking[0m
+[38;5;208m94:0>	Task Inspector ended its checking.[0m
+[38;5;208m94:0>	vTaskInspector is checking[0m
+[38;5;208m95:0>	Task Inspector ended its checking.[0m
+[38;5;208m95:0>	vTaskInspector is checking[0m
+[38;5;208m95:0>	Task Inspector ended its checking.[0m
+[38;5;208m95:0>	vTaskInspector is checking[0m
+[38;5;208m95:0>	Task Inspector ended its checking.[0m
+[38;5;208m95:0>	vTaskInspector is checking[0m
+[38;5;208m95:0>	Task Inspector ended its checking.[0m
+[38;5;208m95:0>	vTaskInspector is checking[0m
+[38;5;208m96:0>	Task Inspector ended its checking.[0m
+[38;5;208m96:0>	vTaskInspector is checking[0m
+[38;5;208m96:0>	Task Inspector ended its checking.[0m
+[38;5;208m96:0>	vTaskInspector is checking[0m
+[38;5;208m96:0>	Task Inspector ended its checking.[0m
+[38;5;208m96:0>	vTaskInspector is checking[0m
+[38;5;208m97:0>	Task Inspector ended its checking.[0m
+[38;5;208m97:0>	vTaskInspector is checking[0m
+[38;5;208m97:0>	Task Inspector ended its checking.[0m
+[38;5;208m97:0>	vTaskInspector is checking[0m
+[38;5;208m97:0>	Task Inspector ended its checking.[0m
+[38;5;208m97:0>	vTaskInspector is checking[0m
+[38;5;208m97:0>	Task Inspector ended its checking.[0m
+[38;5;208m98:0>	vTaskInspector is checking[0m
+[38;5;208m98:0>	Task Inspector ended its checking.[0m
+[38;5;208m98:0>	vTaskInspector is checking[0m
+[38;5;208m98:0>	Task Inspector ended its checking.[0m
+[38;5;208m98:0>	vTaskInspector is checking[0m
+[38;5;208m98:0>	Task Inspector ended its checking.[0m
+[38;5;208m98:0>	vTaskInspector is checking[0m
+[38;5;208m99:0>	Task Inspector ended its checking.[0m
+[38;5;208m99:0>	vTaskInspector is checking[0m
+[38;5;208m99:0>	Task Inspector ended its checking.[0m
+[38;5;208m99:0>	vTaskInspector is checking[0m
+[38;5;208m99:0>	Task Inspector ended its checking.[0m
+[38;5;208m99:0>	vTaskInspector is checking[0m
+[38;5;208m99:0>	Task Inspector ended its checking.[0m
+[38;5;208m99:0>	vTaskInspector is checking[0m
+[38;5;93m100:0>	vTaskTimer : give first Clk[0m
+[38;5;93m100:0>	vTaskTimer : give second Clk[0m
+[38;5;208m100:0>	Task Inspector ended its checking.[0m
+[38;5;208m100:0>	vTaskInspector is checking[0m
+[38;5;208m100:0>	Task Inspector ended its checking.[0m
+[38;5;208m100:0>	vTaskInspector is checking[0m
+[38;5;208m100:0>	Task Inspector ended its checking.[0m
+[38;5;208m100:0>	vTaskInspector is checking[0m
+[38;5;208m101:0>	Task Inspector ended its checking.[0m
+[38;5;208m101:0>	vTaskInspector is checking[0m
+[38;5;208m101:0>	Task Inspector ended its checking.[0m
+[38;5;208m101:0>	vTaskInspector is checking[0m
+[38;5;208m101:0>	Task Inspector ended its checking.[0m
+[38;5;208m101:0>	vTaskInspector is checking[0m
+[38;5;208m102:0>	Task Inspector ended its checking.[0m
+[38;5;208m102:0>	vTaskInspector is checking[0m
+[38;5;208m102:0>	Task Inspector ended its checking.[0m
+[38;5;208m102:0>	vTaskInspector is checking[0m
+[38;5;208m102:0>	Task Inspector ended its checking.[0m
+[38;5;208m102:0>	vTaskInspector is checking[0m
+[38;5;208m102:0>	Task Inspector ended its checking.[0m
+[38;5;208m102:0>	vTaskInspector is checking[0m
+[38;5;208m103:0>	Task Inspector ended its checking.[0m
+[38;5;208m103:0>	vTaskInspector is checking[0m
+[38;5;208m103:0>	Task Inspector ended its checking.[0m
+[38;5;208m103:0>	vTaskInspector is checking[0m
+[38;5;208m103:0>	Task Inspector ended its checking.[0m
+[38;5;208m103:0>	vTaskInspector is checking[0m
+[38;5;208m104:0>	Task Inspector ended its checking.[0m
+[38;5;208m104:0>	vTaskInspector is checking[0m
+[38;5;208m104:0>	Task Inspector ended its checking.[0m
+[38;5;208m104:0>	vTaskInspector is checking[0m
+[38;5;208m104:0>	Task Inspector ended its checking.[0m
+[38;5;208m104:0>	vTaskInspector is checking[0m
+[38;5;208m105:0>	Task Inspector ended its checking.[0m
+[38;5;208m105:0>	vTaskInspector is checking[0m
+[38;5;208m105:0>	Task Inspector ended its checking.[0m
+[38;5;208m105:0>	vTaskInspector is checking[0m
+[38;5;208m105:0>	Task Inspector ended its checking.[0m
+[38;5;208m105:0>	vTaskInspector is checking[0m
+[38;5;208m106:0>	Task Inspector ended its checking.[0m
+[38;5;208m106:0>	vTaskInspector is checking[0m
+[38;5;208m106:0>	Task Inspector ended its checking.[0m
+[38;5;208m106:0>	vTaskInspector is checking[0m
+[38;5;208m106:0>	Task Inspector ended its checking.[0m
+[38;5;208m106:0>	vTaskInspector is checking[0m
+[38;5;208m106:0>	Task Inspector ended its checking.[0m
+[38;5;208m106:0>	vTaskInspector is checking[0m
+[38;5;208m107:0>	Task Inspector ended its checking.[0m
+[38;5;208m107:0>	vTaskInspector is checking[0m
+[38;5;208m107:0>	Task Inspector ended its checking.[0m
+[38;5;208m107:0>	vTaskInspector is checking[0m
+[38;5;208m107:0>	Task Inspector ended its checking.[0m
+[38;5;208m107:0>	vTaskInspector is checking[0m
+[38;5;208m108:0>	Task Inspector ended its checking.[0m
+[38;5;208m108:0>	vTaskInspector is checking[0m
+[38;5;208m108:0>	Task Inspector ended its checking.[0m
+[38;5;208m108:0>	vTaskInspector is checking[0m
+[38;5;208m108:0>	Task Inspector ended its checking.[0m
+[38;5;208m108:0>	vTaskInspector is checking[0m
+[38;5;208m109:0>	Task Inspector ended its checking.[0m
+[38;5;208m109:0>	vTaskInspector is checking[0m
+[38;5;208m109:0>	Task Inspector ended its checking.[0m
+[38;5;208m109:0>	vTaskInspector is checking[0m
+[38;5;208m109:0>	Task Inspector ended its checking.[0m
+[38;5;208m109:0>	vTaskInspector is checking[0m
+[38;5;208m109:0>	Task Inspector ended its checking.[0m
+[38;5;208m109:0>	vTaskInspector is checking[0m
+[38;5;208m110:0>	Task Inspector ended its checking.[0m
+[38;5;208m110:0>	vTaskInspector is checking[0m
+[38;5;208m110:0>	Task Inspector ended its checking.[0m
+[38;5;208m110:0>	vTaskInspector is checking[0m
+[38;5;208m110:0>	Task Inspector ended its checking.[0m
+[38;5;208m110:0>	vTaskInspector is checking[0m
+[38;5;208m110:0>	Task Inspector ended its checking.[0m
+[38;5;208m111:0>	vTaskInspector is checking[0m
+[38;5;208m111:0>	Task Inspector ended its checking.[0m
+[38;5;208m111:0>	vTaskInspector is checking[0m
+[38;5;208m111:0>	Task Inspector ended its checking.[0m
+[38;5;208m111:0>	vTaskInspector is checking[0m
+[38;5;208m111:0>	Task Inspector ended its checking.[0m
+[38;5;208m111:0>	vTaskInspector is checking[0m
+[38;5;208m112:0>	Task Inspector ended its checking.[0m
+[38;5;208m112:0>	vTaskInspector is checking[0m
+[38;5;208m112:0>	Task Inspector ended its checking.[0m
+[38;5;208m112:0>	vTaskInspector is checking[0m
+[38;5;208m112:0>	Task Inspector ended its checking.[0m
+[38;5;208m112:0>	vTaskInspector is checking[0m
+[38;5;208m112:0>	Task Inspector ended its checking.[0m
+[38;5;208m112:0>	vTaskInspector is checking[0m
+[38;5;208m113:0>	Task Inspector ended its checking.[0m
+[38;5;208m113:0>	vTaskInspector is checking[0m
+[38;5;208m113:0>	Task Inspector ended its checking.[0m
+[38;5;208m113:0>	vTaskInspector is checking[0m
+[38;5;208m113:0>	Task Inspector ended its checking.[0m
+[38;5;208m113:0>	vTaskInspector is checking[0m
+[38;5;208m114:0>	Task Inspector ended its checking.[0m
+[38;5;208m114:0>	vTaskInspector is checking[0m
+[38;5;208m114:0>	Task Inspector ended its checking.[0m
+[38;5;208m114:0>	vTaskInspector is checking[0m
+[38;5;208m114:0>	Task Inspector ended its checking.[0m
+[38;5;208m114:0>	vTaskInspector is checking[0m
+[38;5;208m115:0>	Task Inspector ended its checking.[0m
+[38;5;208m115:0>	vTaskInspector is checking[0m
+[38;5;208m115:0>	Task Inspector ended its checking.[0m
+[38;5;208m115:0>	vTaskInspector is checking[0m
+[38;5;208m115:0>	Task Inspector ended its checking.[0m
+[38;5;208m115:0>	vTaskInspector is checking[0m
+[38;5;208m115:0>	Task Inspector ended its checking.[0m
+[38;5;208m115:0>	vTaskInspector is checking[0m
+[38;5;208m116:0>	Task Inspector ended its checking.[0m
+[38;5;208m116:0>	vTaskInspector is checking[0m
+[38;5;208m116:0>	Task Inspector ended its checking.[0m
+[38;5;208m116:0>	vTaskInspector is checking[0m
+[38;5;208m116:0>	Task Inspector ended its checking.[0m
+[38;5;208m116:0>	vTaskInspector is checking[0m
+[38;5;208m117:0>	Task Inspector ended its checking.[0m
+[38;5;208m117:0>	vTaskInspector is checking[0m
+[38;5;208m117:0>	Task Inspector ended its checking.[0m
+[38;5;208m117:0>	vTaskInspector is checking[0m
+[38;5;208m117:0>	Task Inspector ended its checking.[0m
+[38;5;208m117:0>	vTaskInspector is checking[0m
+[38;5;208m117:0>	Task Inspector ended its checking.[0m
+[38;5;208m117:0>	vTaskInspector is checking[0m
+[38;5;208m118:0>	Task Inspector ended its checking.[0m
+[38;5;208m118:0>	vTaskInspector is checking[0m
+[38;5;208m118:0>	Task Inspector ended its checking.[0m
+[38;5;208m118:0>	vTaskInspector is checking[0m
+[38;5;208m118:0>	Task Inspector ended its checking.[0m
+[38;5;208m118:0>	vTaskInspector is checking[0m
+[38;5;208m118:0>	Task Inspector ended its checking.[0m
+[38;5;208m118:0>	vTaskInspector is checking[0m
+[38;5;208m119:0>	Task Inspector ended its checking.[0m
+[38;5;208m119:0>	vTaskInspector is checking[0m
+[38;5;208m119:0>	Task Inspector ended its checking.[0m
+[38;5;208m119:0>	vTaskInspector is checking[0m
+[38;5;208m119:0>	Task Inspector ended its checking.[0m
+[38;5;208m119:0>	vTaskInspector is checking[0m
+[38;5;208m119:0>	Task Inspector ended its checking.[0m
+[38;5;208m120:0>	vTaskInspector is checking[0m
+[38;5;208m120:0>	Task Inspector ended its checking.[0m
+[38;5;208m120:0>	vTaskInspector is checking[0m
+[38;5;208m120:0>	Task Inspector ended its checking.[0m
+[38;5;208m120:0>	vTaskInspector is checking[0m
+[38;5;208m120:0>	Task Inspector ended its checking.[0m
+[38;5;208m120:0>	vTaskInspector is checking[0m
+[38;5;208m121:0>	Task Inspector ended its checking.[0m
+[38;5;208m121:0>	vTaskInspector is checking[0m
+[38;5;208m121:0>	Task Inspector ended its checking.[0m
+[38;5;208m121:0>	vTaskInspector is checking[0m
+[38;5;208m121:0>	Task Inspector ended its checking.[0m
+[38;5;208m121:0>	vTaskInspector is checking[0m
+[38;5;208m122:0>	Task Inspector ended its checking.[0m
+[38;5;208m122:0>	vTaskInspector is checking[0m
+[38;5;208m122:0>	Task Inspector ended its checking.[0m
+[38;5;208m122:0>	vTaskInspector is checking[0m
+[38;5;208m122:0>	Task Inspector ended its checking.[0m
+[38;5;208m122:0>	vTaskInspector is checking[0m
+[38;5;208m122:0>	Task Inspector ended its checking.[0m
+[38;5;208m122:0>	vTaskInspector is checking[0m
+[38;5;208m123:0>	Task Inspector ended its checking.[0m
+[38;5;208m123:0>	vTaskInspector is checking[0m
+[38;5;208m123:0>	Task Inspector ended its checking.[0m
+[38;5;208m123:0>	vTaskInspector is checking[0m
+[38;5;208m123:0>	Task Inspector ended its checking.[0m
+[38;5;208m123:0>	vTaskInspector is checking[0m
+[38;5;208m124:0>	Task Inspector ended its checking.[0m
+[38;5;208m124:0>	vTaskInspector is checking[0m
+[38;5;208m124:0>	Task Inspector ended its checking.[0m
+[38;5;208m124:0>	vTaskInspector is checking[0m
+[38;5;208m124:0>	Task Inspector ended its checking.[0m
+[38;5;208m124:0>	vTaskInspector is checking[0m
+[38;5;93m125:0>	vTaskTimer : give first Clk[0m
+[38;5;93m125:0>	vTaskTimer : give second Clk[0m
+[38;5;208m125:0>	Task Inspector ended its checking.[0m
+[38;5;208m125:0>	vTaskInspector is checking[0m
+[38;5;208m125:0>	Task Inspector ended its checking.[0m
+[38;5;208m125:0>	vTaskInspector is checking[0m
+[38;5;208m125:0>	Task Inspector ended its checking.[0m
+[38;5;208m125:0>	vTaskInspector is checking[0m
+[38;5;208m126:0>	Task Inspector ended its checking.[0m
+[38;5;208m126:0>	vTaskInspector is checking[0m
+[38;5;208m126:0>	Task Inspector ended its checking.[0m
+[38;5;208m126:0>	vTaskInspector is checking[0m
+[38;5;208m126:0>	Task Inspector ended its checking.[0m
+[38;5;208m126:0>	vTaskInspector is checking[0m
+[38;5;208m126:0>	Task Inspector ended its checking.[0m
+[38;5;208m126:0>	vTaskInspector is checking[0m
+[38;5;208m127:0>	Task Inspector ended its checking.[0m
+[38;5;208m127:0>	vTaskInspector is checking[0m
+[38;5;208m127:0>	Task Inspector ended its checking.[0m
+[38;5;208m127:0>	vTaskInspector is checking[0m
+[38;5;208m127:0>	Task Inspector ended its checking.[0m
+[38;5;208m127:0>	vTaskInspector is checking[0m
+[38;5;208m128:0>	Task Inspector ended its checking.[0m
+[38;5;208m128:0>	vTaskInspector is checking[0m
+[38;5;208m128:0>	Task Inspector ended its checking.[0m
+[38;5;208m128:0>	vTaskInspector is checking[0m
+[38;5;208m128:0>	Task Inspector ended its checking.[0m
+[38;5;208m128:0>	vTaskInspector is checking[0m
+[38;5;208m129:0>	Task Inspector ended its checking.[0m
+[38;5;208m129:0>	vTaskInspector is checking[0m
+[38;5;208m129:0>	Task Inspector ended its checking.[0m
+[38;5;208m129:0>	vTaskInspector is checking[0m
+[38;5;208m129:0>	Task Inspector ended its checking.[0m
+[38;5;208m129:0>	vTaskInspector is checking[0m
+[38;5;208m130:0>	Task Inspector ended its checking.[0m
+[38;5;208m130:0>	vTaskInspector is checking[0m
+[38;5;208m130:0>	Task Inspector ended its checking.[0m
+[38;5;208m130:0>	vTaskInspector is checking[0m
+[38;5;208m130:0>	Task Inspector ended its checking.[0m
+[38;5;208m130:0>	vTaskInspector is checking[0m
+[38;5;208m131:0>	Task Inspector ended its checking.[0m
+[38;5;208m131:0>	vTaskInspector is checking[0m
+[38;5;208m131:0>	Task Inspector ended its checking.[0m
+[38;5;208m131:0>	vTaskInspector is checking[0m
+[38;5;208m131:0>	Task Inspector ended its checking.[0m
+[38;5;208m131:0>	vTaskInspector is checking[0m
+[38;5;208m131:0>	Task Inspector ended its checking.[0m
+[38;5;208m131:0>	vTaskInspector is checking[0m
+[38;5;208m132:0>	Task Inspector ended its checking.[0m
+[38;5;208m132:0>	vTaskInspector is checking[0m
+[38;5;208m132:0>	Task Inspector ended its checking.[0m
+[38;5;208m132:0>	vTaskInspector is checking[0m
+[38;5;208m132:0>	Task Inspector ended its checking.[0m
+[38;5;208m132:0>	vTaskInspector is checking[0m
+[38;5;208m133:0>	Task Inspector ended its checking.[0m
+[38;5;208m133:0>	vTaskInspector is checking[0m
+[38;5;208m133:0>	Task Inspector ended its checking.[0m
+[38;5;208m133:0>	vTaskInspector is checking[0m
+[38;5;208m133:0>	Task Inspector ended its checking.[0m
+[38;5;208m133:0>	vTaskInspector is checking[0m
+[38;5;208m134:0>	Task Inspector ended its checking.[0m
+[38;5;208m134:0>	vTaskInspector is checking[0m
+[38;5;208m134:0>	Task Inspector ended its checking.[0m
+[38;5;208m134:0>	vTaskInspector is checking[0m
+[38;5;208m134:0>	Task Inspector ended its checking.[0m
+[38;5;208m134:0>	vTaskInspector is checking[0m
+[38;5;208m135:0>	Task Inspector ended its checking.[0m
+[38;5;208m135:0>	vTaskInspector is checking[0m
+[38;5;208m135:0>	Task Inspector ended its checking.[0m
+[38;5;208m135:0>	vTaskInspector is checking[0m
+[38;5;208m135:0>	Task Inspector ended its checking.[0m
+[38;5;208m135:0>	vTaskInspector is checking[0m
+[38;5;208m135:0>	Task Inspector ended its checking.[0m
+[38;5;208m135:0>	vTaskInspector is checking[0m
+[38;5;208m136:0>	Task Inspector ended its checking.[0m
+[38;5;208m136:0>	vTaskInspector is checking[0m
+[38;5;208m136:0>	Task Inspector ended its checking.[0m
+[38;5;208m136:0>	vTaskInspector is checking[0m
+[38;5;208m136:0>	Task Inspector ended its checking.[0m
+[38;5;208m136:0>	vTaskInspector is checking[0m
+[38;5;208m137:0>	Task Inspector ended its checking.[0m
+[38;5;208m137:0>	vTaskInspector is checking[0m
+[38;5;208m137:0>	Task Inspector ended its checking.[0m
+[38;5;208m137:0>	vTaskInspector is checking[0m
+[38;5;208m137:0>	Task Inspector ended its checking.[0m
+[38;5;208m137:0>	vTaskInspector is checking[0m
+[38;5;208m138:0>	Task Inspector ended its checking.[0m
+[38;5;208m138:0>	vTaskInspector is checking[0m
+[38;5;208m138:0>	Task Inspector ended its checking.[0m
+[38;5;208m138:0>	vTaskInspector is checking[0m
+[38;5;208m138:0>	Task Inspector ended its checking.[0m
+[38;5;208m138:0>	vTaskInspector is checking[0m
+[38;5;208m139:0>	Task Inspector ended its checking.[0m
+[38;5;208m139:0>	vTaskInspector is checking[0m
+[38;5;208m139:0>	Task Inspector ended its checking.[0m
+[38;5;208m139:0>	vTaskInspector is checking[0m
+[38;5;208m139:0>	Task Inspector ended its checking.[0m
+[38;5;208m139:0>	vTaskInspector is checking[0m
+[38;5;208m139:0>	Task Inspector ended its checking.[0m
+[38;5;208m139:0>	vTaskInspector is checking[0m
+[38;5;208m140:0>	Task Inspector ended its checking.[0m
+[38;5;208m140:0>	vTaskInspector is checking[0m
+[38;5;208m140:0>	Task Inspector ended its checking.[0m
+[38;5;208m140:0>	vTaskInspector is checking[0m
+[38;5;208m140:0>	Task Inspector ended its checking.[0m
+[38;5;208m140:0>	vTaskInspector is checking[0m
+[38;5;208m141:0>	Task Inspector ended its checking.[0m
+[38;5;208m141:0>	vTaskInspector is checking[0m
+[38;5;208m141:0>	Task Inspector ended its checking.[0m
+[38;5;208m141:0>	vTaskInspector is checking[0m
+[38;5;208m141:0>	Task Inspector ended its checking.[0m
+[38;5;208m141:0>	vTaskInspector is checking[0m
+[38;5;208m142:0>	Task Inspector ended its checking.[0m
+[38;5;208m142:0>	vTaskInspector is checking[0m
+[38;5;208m142:0>	Task Inspector ended its checking.[0m
+[38;5;208m142:0>	vTaskInspector is checking[0m
+[38;5;208m142:0>	Task Inspector ended its checking.[0m
+[38;5;208m142:0>	vTaskInspector is checking[0m
+[38;5;208m142:0>	Task Inspector ended its checking.[0m
+[38;5;208m142:0>	vTaskInspector is checking[0m
+[38;5;208m143:0>	Task Inspector ended its checking.[0m
+[38;5;208m143:0>	vTaskInspector is checking[0m
+[38;5;208m143:0>	Task Inspector ended its checking.[0m
+[38;5;208m143:0>	vTaskInspector is checking[0m
+[38;5;208m143:0>	Task Inspector ended its checking.[0m
+[38;5;208m143:0>	vTaskInspector is checking[0m
+[38;5;208m144:0>	Task Inspector ended its checking.[0m
+[38;5;208m144:0>	vTaskInspector is checking[0m
+[38;5;208m144:0>	Task Inspector ended its checking.[0m
+[38;5;208m144:0>	vTaskInspector is checking[0m
+[38;5;208m144:0>	Task Inspector ended its checking.[0m
+[38;5;208m144:0>	vTaskInspector is checking[0m
+[38;5;208m145:0>	Task Inspector ended its checking.[0m
+[38;5;208m145:0>	vTaskInspector is checking[0m
+[38;5;208m145:0>	Task Inspector ended its checking.[0m
+[38;5;208m145:0>	vTaskInspector is checking[0m
+[38;5;208m145:0>	Task Inspector ended its checking.[0m
+[38;5;208m145:0>	vTaskInspector is checking[0m
+[38;5;208m145:0>	Task Inspector ended its checking.[0m
+[38;5;208m145:0>	vTaskInspector is checking[0m
+[38;5;208m146:0>	Task Inspector ended its checking.[0m
+[38;5;208m146:0>	vTaskInspector is checking[0m
+[38;5;208m146:0>	Task Inspector ended its checking.[0m
+[38;5;208m146:0>	vTaskInspector is checking[0m
+[38;5;208m146:0>	Task Inspector ended its checking.[0m
+[38;5;208m146:0>	vTaskInspector is checking[0m
+[38;5;208m146:0>	Task Inspector ended its checking.[0m
+[38;5;208m147:0>	vTaskInspector is checking[0m
+[38;5;208m147:0>	Task Inspector ended its checking.[0m
+[38;5;208m147:0>	vTaskInspector is checking[0m
+[38;5;208m147:0>	Task Inspector ended its checking.[0m
+[38;5;208m147:0>	vTaskInspector is checking[0m
+[38;5;208m147:0>	Task Inspector ended its checking.[0m
+[38;5;208m147:0>	vTaskInspector is checking[0m
+[38;5;208m148:0>	Task Inspector ended its checking.[0m
+[38;5;208m148:0>	vTaskInspector is checking[0m
+[38;5;208m148:0>	Task Inspector ended its checking.[0m
+[38;5;208m148:0>	vTaskInspector is checking[0m
+[38;5;208m148:0>	Task Inspector ended its checking.[0m
+[38;5;208m148:0>	vTaskInspector is checking[0m
+[38;5;208m149:0>	Task Inspector ended its checking.[0m
+[38;5;208m149:0>	vTaskInspector is checking[0m
+[38;5;208m149:0>	Task Inspector ended its checking.[0m
+[38;5;208m149:0>	vTaskInspector is checking[0m
+[38;5;208m149:0>	Task Inspector ended its checking.[0m
+[38;5;208m149:0>	vTaskInspector is checking[0m
+[38;5;208m149:0>	Task Inspector ended its checking.[0m
+[38;5;208m149:0>	vTaskInspector is checking[0m
+[38;5;93m150:0>	vTaskTimer : give first Clk[0m
+[38;5;93m150:0>	vTaskTimer : give second Clk[0m
+[38;5;208m150:0>	Task Inspector ended its checking.[0m
+[38;5;208m150:0>	vTaskInspector is checking[0m
+[38;5;208m150:0>	Task Inspector ended its checking.[0m
+[38;5;208m150:0>	vTaskInspector is checking[0m
+[38;5;208m150:0>	Task Inspector ended its checking.[0m
+[38;5;208m150:0>	vTaskInspector is checking[0m
+[38;5;208m151:0>	Task Inspector ended its checking.[0m
+[38;5;208m151:0>	vTaskInspector is checking[0m
+[38;5;208m151:0>	Task Inspector ended its checking.[0m
+[38;5;208m151:0>	vTaskInspector is checking[0m
+[38;5;208m151:0>	Task Inspector ended its checking.[0m
+[38;5;208m151:0>	vTaskInspector is checking[0m
+[38;5;208m152:0>	Task Inspector ended its checking.[0m
+[38;5;208m152:0>	vTaskInspector is checking[0m
+[38;5;208m152:0>	Task Inspector ended its checking.[0m
+[38;5;208m152:0>	vTaskInspector is checking[0m
+[38;5;208m152:0>	Task Inspector ended its checking.[0m
+[38;5;208m152:0>	vTaskInspector is checking[0m
+[38;5;208m152:0>	Task Inspector ended its checking.[0m
+[38;5;208m153:0>	vTaskInspector is checking[0m
+[38;5;208m153:0>	Task Inspector ended its checking.[0m
+[38;5;208m153:0>	vTaskInspector is checking[0m
+[38;5;208m153:0>	Task Inspector ended its checking.[0m
+[38;5;208m153:0>	vTaskInspector is checking[0m
+[38;5;208m153:0>	Task Inspector ended its checking.[0m
+[38;5;208m153:0>	vTaskInspector is checking[0m
+[38;5;208m154:0>	Task Inspector ended its checking.[0m
+[38;5;208m154:0>	vTaskInspector is checking[0m
+[38;5;208m154:0>	Task Inspector ended its checking.[0m
+[38;5;208m154:0>	vTaskInspector is checking[0m
+[38;5;208m154:0>	Task Inspector ended its checking.[0m
+[38;5;208m154:0>	vTaskInspector is checking[0m
+[38;5;208m154:0>	Task Inspector ended its checking.[0m
+[38;5;208m154:0>	vTaskInspector is checking[0m
+[38;5;208m155:0>	Task Inspector ended its checking.[0m
+[38;5;208m155:0>	vTaskInspector is checking[0m
+[38;5;208m155:0>	Task Inspector ended its checking.[0m
+[38;5;208m155:0>	vTaskInspector is checking[0m
+[38;5;208m155:0>	Task Inspector ended its checking.[0m
+[38;5;208m155:0>	vTaskInspector is checking[0m
+[38;5;208m156:0>	Task Inspector ended its checking.[0m
+[38;5;208m156:0>	vTaskInspector is checking[0m
+[38;5;208m156:0>	Task Inspector ended its checking.[0m
+[38;5;208m156:0>	vTaskInspector is checking[0m
+[38;5;208m156:0>	Task Inspector ended its checking.[0m
+[38;5;208m156:0>	vTaskInspector is checking[0m
+[38;5;208m157:0>	Task Inspector ended its checking.[0m
+[38;5;208m157:0>	vTaskInspector is checking[0m
+[38;5;208m157:0>	Task Inspector ended its checking.[0m
+[38;5;208m157:0>	vTaskInspector is checking[0m
+[38;5;208m157:0>	Task Inspector ended its checking.[0m
+[38;5;208m157:0>	vTaskInspector is checking[0m
+[38;5;208m157:0>	Task Inspector ended its checking.[0m
+[38;5;208m157:0>	vTaskInspector is checking[0m
+[38;5;208m158:0>	Task Inspector ended its checking.[0m
+[38;5;208m158:0>	vTaskInspector is checking[0m
+[38;5;208m158:0>	Task Inspector ended its checking.[0m
+[38;5;208m158:0>	vTaskInspector is checking[0m
+[38;5;208m158:0>	Task Inspector ended its checking.[0m
+[38;5;208m158:0>	vTaskInspector is checking[0m
+[38;5;208m159:0>	Task Inspector ended its checking.[0m
+[38;5;208m159:0>	vTaskInspector is checking[0m
+[38;5;208m159:0>	Task Inspector ended its checking.[0m
+[38;5;208m159:0>	vTaskInspector is checking[0m
+[38;5;208m159:0>	Task Inspector ended its checking.[0m
+[38;5;208m159:0>	vTaskInspector is checking[0m
+[38;5;208m160:0>	Task Inspector ended its checking.[0m
+[38;5;208m160:0>	vTaskInspector is checking[0m
+[38;5;208m160:0>	Task Inspector ended its checking.[0m
+[38;5;208m160:0>	vTaskInspector is checking[0m
+[38;5;208m160:0>	Task Inspector ended its checking.[0m
+[38;5;208m160:0>	vTaskInspector is checking[0m
+[38;5;208m160:0>	Task Inspector ended its checking.[0m
+[38;5;208m160:0>	vTaskInspector is checking[0m
+[38;5;208m161:0>	Task Inspector ended its checking.[0m
+[38;5;208m161:0>	vTaskInspector is checking[0m
+[38;5;208m161:0>	Task Inspector ended its checking.[0m
+[38;5;208m161:0>	vTaskInspector is checking[0m
+[38;5;208m161:0>	Task Inspector ended its checking.[0m
+[38;5;208m161:0>	vTaskInspector is checking[0m
+[38;5;208m162:0>	Task Inspector ended its checking.[0m
+[38;5;208m162:0>	vTaskInspector is checking[0m
+[38;5;208m162:0>	Task Inspector ended its checking.[0m
+[38;5;208m162:0>	vTaskInspector is checking[0m
+[38;5;208m162:0>	Task Inspector ended its checking.[0m
+[38;5;208m162:0>	vTaskInspector is checking[0m
+[38;5;208m162:0>	Task Inspector ended its checking.[0m
+[38;5;208m163:0>	vTaskInspector is checking[0m
+[38;5;208m163:0>	Task Inspector ended its checking.[0m
+[38;5;208m163:0>	vTaskInspector is checking[0m
+[38;5;208m163:0>	Task Inspector ended its checking.[0m
+[38;5;208m163:0>	vTaskInspector is checking[0m
+[38;5;208m163:0>	Task Inspector ended its checking.[0m
+[38;5;208m163:0>	vTaskInspector is checking[0m
+[38;5;208m164:0>	Task Inspector ended its checking.[0m
+[38;5;208m164:0>	vTaskInspector is checking[0m
+[38;5;208m164:0>	Task Inspector ended its checking.[0m
+[38;5;208m164:0>	vTaskInspector is checking[0m
+[38;5;208m164:0>	Task Inspector ended its checking.[0m
+[38;5;208m164:0>	vTaskInspector is checking[0m
+[38;5;208m165:0>	Task Inspector ended its checking.[0m
+[38;5;208m165:0>	vTaskInspector is checking[0m
+[38;5;208m165:0>	Task Inspector ended its checking.[0m
+[38;5;208m165:0>	vTaskInspector is checking[0m
+[38;5;208m165:0>	Task Inspector ended its checking.[0m
+[38;5;208m165:0>	vTaskInspector is checking[0m
+[38;5;208m166:0>	Task Inspector ended its checking.[0m
+[38;5;208m166:0>	vTaskInspector is checking[0m
+[38;5;208m166:0>	Task Inspector ended its checking.[0m
+[38;5;208m166:0>	vTaskInspector is checking[0m
+[38;5;208m166:0>	Task Inspector ended its checking.[0m
+[38;5;208m166:0>	vTaskInspector is checking[0m
+[38;5;208m166:0>	Task Inspector ended its checking.[0m
+[38;5;208m167:0>	vTaskInspector is checking[0m
+[38;5;208m167:0>	Task Inspector ended its checking.[0m
+[38;5;208m167:0>	vTaskInspector is checking[0m
+[38;5;208m167:0>	Task Inspector ended its checking.[0m
+[38;5;208m167:0>	vTaskInspector is checking[0m
+[38;5;208m167:0>	Task Inspector ended its checking.[0m
+[38;5;208m167:0>	vTaskInspector is checking[0m
+[38;5;208m168:0>	Task Inspector ended its checking.[0m
+[38;5;208m168:0>	vTaskInspector is checking[0m
+[38;5;208m168:0>	Task Inspector ended its checking.[0m
+[38;5;208m168:0>	vTaskInspector is checking[0m
+[38;5;208m168:0>	Task Inspector ended its checking.[0m
+[38;5;208m168:0>	vTaskInspector is checking[0m
+[38;5;208m169:0>	Task Inspector ended its checking.[0m
+[38;5;208m169:0>	vTaskInspector is checking[0m
+[38;5;208m169:0>	Task Inspector ended its checking.[0m
+[38;5;208m169:0>	vTaskInspector is checking[0m
+[38;5;208m169:0>	Task Inspector ended its checking.[0m
+[38;5;208m169:0>	vTaskInspector is checking[0m
+[38;5;208m170:0>	Task Inspector ended its checking.[0m
+[38;5;208m170:0>	vTaskInspector is checking[0m
+[38;5;208m170:0>	Task Inspector ended its checking.[0m
+[38;5;208m170:0>	vTaskInspector is checking[0m
+[38;5;208m170:0>	Task Inspector ended its checking.[0m
+[38;5;208m170:0>	vTaskInspector is checking[0m
+[38;5;208m170:0>	Task Inspector ended its checking.[0m
+[38;5;208m170:0>	vTaskInspector is checking[0m
+[38;5;208m171:0>	Task Inspector ended its checking.[0m
+[38;5;208m171:0>	vTaskInspector is checking[0m
+[38;5;208m171:0>	Task Inspector ended its checking.[0m
+[38;5;208m171:0>	vTaskInspector is checking[0m
+[38;5;208m171:0>	Task Inspector ended its checking.[0m
+[38;5;208m171:0>	vTaskInspector is checking[0m
+[38;5;208m172:0>	Task Inspector ended its checking.[0m
+[38;5;208m172:0>	vTaskInspector is checking[0m
+[38;5;208m172:0>	Task Inspector ended its checking.[0m
+[38;5;208m172:0>	vTaskInspector is checking[0m
+[38;5;208m172:0>	Task Inspector ended its checking.[0m
+[38;5;208m172:0>	vTaskInspector is checking[0m
+[38;5;208m173:0>	Task Inspector ended its checking.[0m
+[38;5;208m173:0>	vTaskInspector is checking[0m
+[38;5;208m173:0>	Task Inspector ended its checking.[0m
+[38;5;208m173:0>	vTaskInspector is checking[0m
+[38;5;208m173:0>	Task Inspector ended its checking.[0m
+[38;5;208m173:0>	vTaskInspector is checking[0m
+[38;5;208m173:0>	Task Inspector ended its checking.[0m
+[38;5;208m174:0>	vTaskInspector is checking[0m
+[38;5;208m174:0>	Task Inspector ended its checking.[0m
+[38;5;208m174:0>	vTaskInspector is checking[0m
+[38;5;208m174:0>	Task Inspector ended its checking.[0m
+[38;5;208m174:0>	vTaskInspector is checking[0m
+[38;5;208m174:0>	Task Inspector ended its checking.[0m
+[38;5;208m174:0>	vTaskInspector is checking[0m
+[38;5;93m175:0>	vTaskTimer : give first Clk[0m
+[38;5;93m175:0>	vTaskTimer : give second Clk[0m
+[38;5;208m175:0>	Task Inspector ended its checking.[0m
+[38;5;208m175:0>	vTaskInspector is checking[0m
+[38;5;208m175:0>	Task Inspector ended its checking.[0m
+[38;5;208m175:0>	vTaskInspector is checking[0m
+[38;5;208m176:0>	Task Inspector ended its checking.[0m
+[38;5;208m176:0>	vTaskInspector is checking[0m
+[38;5;208m176:0>	Task Inspector ended its checking.[0m
+[38;5;208m176:0>	vTaskInspector is checking[0m
+[38;5;208m176:0>	Task Inspector ended its checking.[0m
+[38;5;208m176:0>	vTaskInspector is checking[0m
+[38;5;208m176:0>	Task Inspector ended its checking.[0m
+[38;5;208m177:0>	vTaskInspector is checking[0m
+[38;5;208m177:0>	Task Inspector ended its checking.[0m
+[38;5;208m177:0>	vTaskInspector is checking[0m
+[38;5;208m177:0>	Task Inspector ended its checking.[0m
+[38;5;208m177:0>	vTaskInspector is checking[0m
+[38;5;208m177:0>	Task Inspector ended its checking.[0m
+[38;5;208m177:0>	vTaskInspector is checking[0m
+[38;5;208m178:0>	Task Inspector ended its checking.[0m
+[38;5;208m178:0>	vTaskInspector is checking[0m
+[38;5;208m178:0>	Task Inspector ended its checking.[0m
+[38;5;208m178:0>	vTaskInspector is checking[0m
+[38;5;208m178:0>	Task Inspector ended its checking.[0m
+[38;5;208m178:0>	vTaskInspector is checking[0m
+[38;5;208m179:0>	Task Inspector ended its checking.[0m
+[38;5;208m179:0>	vTaskInspector is checking[0m
+[38;5;208m179:0>	Task Inspector ended its checking.[0m
+[38;5;208m179:0>	vTaskInspector is checking[0m
+[38;5;208m179:0>	Task Inspector ended its checking.[0m
+[38;5;208m179:0>	vTaskInspector is checking[0m
+[38;5;208m180:0>	Task Inspector ended its checking.[0m
+[38;5;208m180:0>	vTaskInspector is checking[0m
+[38;5;208m180:0>	Task Inspector ended its checking.[0m
+[38;5;208m180:0>	vTaskInspector is checking[0m
+[38;5;208m180:0>	Task Inspector ended its checking.[0m
+[38;5;208m180:0>	vTaskInspector is checking[0m
+[38;5;208m181:0>	Task Inspector ended its checking.[0m
+[38;5;208m181:0>	vTaskInspector is checking[0m
+[38;5;208m181:0>	Task Inspector ended its checking.[0m
+[38;5;208m181:0>	vTaskInspector is checking[0m
+[38;5;208m181:0>	Task Inspector ended its checking.[0m
+[38;5;208m181:0>	vTaskInspector is checking[0m
+[38;5;208m181:0>	Task Inspector ended its checking.[0m
+[38;5;208m181:0>	vTaskInspector is checking[0m
+[38;5;208m182:0>	Task Inspector ended its checking.[0m
+[38;5;208m182:0>	vTaskInspector is checking[0m

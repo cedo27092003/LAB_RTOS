@@ -1,0 +1,2 @@
+source /home/cedric/esp-prjects/LAB_RTOS/lab3-3_mutex/build/bootloader/gdbinit/symbols
+source /home/cedric/esp-prjects/LAB_RTOS/lab3-3_mutex/build/bootloader/gdbinit/connect
