@@ -1,7 +1,0 @@
-"-specs=/home/cedric/esp-prjects/LAB_RTOS/lab2_msg_queue_and_interrupt/build/bootloader/specs/picolibc.specs"
--Wno-frame-address
--mlongcalls
--fno-builtin-memcpy
--fno-builtin-memset
--fno-builtin-bzero
--fno-rtti

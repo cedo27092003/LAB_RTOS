@@ -1,2 +1,0 @@
-source /home/cedric/esp-prjects/LAB_RTOS/lab2-3_single_msg_queue_interrupt/build/gdbinit/symbols
-source /home/cedric/esp-prjects/LAB_RTOS/lab2-3_single_msg_queue_interrupt/build/gdbinit/connect
