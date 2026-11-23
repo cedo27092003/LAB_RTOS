@@ -1,0 +1,150 @@
+Command: /home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python /home/cedric/esp/esp-idf/tools/idf_monitor.py -p socket://localhost:5555 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/cedric/esp-prjects/LAB_RTOS/lab4-1_two_notifications_clk/build/hello_world.elf /home/cedric/esp-prjects/LAB_RTOS/lab4-1_two_notifications_clk/build/bootloader/bootloader.elf -m '/home/cedric/.espressif/python_env/idf6.1_py3.10_env/bin/python' '/home/cedric/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (699) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (701) boot: compile time Nov 23 2026 11:17:26[0m
+[0;32mI (701) boot: Multicore bootloader[0m
+[0;32mI (757) boot: chip revision: v3.0[0m
+[0;32mI (759) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (759) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (759) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (769) boot: Enabling RNG early entropy source...[0m
+[0;32mI (779) boot: Partition Table:[0m
+[0;32mI (779) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (779) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (779) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (779) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (784) boot: End of partition table[0m
+[0;32mI (835) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06e28h ( 28200) map[0m
+[0;32mI (861) esp_image: segment 1: paddr=00016e50 vaddr=3ffb0000 size=0289ch ( 10396) load[0m
+[0;32mI (881) esp_image: segment 2: paddr=000196f4 vaddr=40080000 size=06924h ( 26916) load[0m
+[0;32mI (907) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0b244h ( 45636) map[0m
+[0;32mI (932) esp_image: segment 4: paddr=0002b26c vaddr=40086924 size=03b2ch ( 15148) load[0m
+[0;32mI (956) esp_image: segment 5: paddr=0002eda0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (1020) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (1020) boot: Disabling RNG early entropy source...[0m
+[0;32mI (1038) cpu_start: Multicore app[0m
+[0;32mI (1763) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1767) cpu_start: Pro cpu start user code[0m
+[0;32mI (1768) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1768) app_init: Application information:[0m
+[0;32mI (1768) app_init: Project name:     hello_world[0m
+[0;32mI (1768) app_init: App version:      71681db-dirty[0m
+[0;32mI (1768) app_init: Compile time:     Nov 23 2026 11:17:52[0m
+[0;32mI (1769) app_init: ELF file SHA256:  1751eda10...[0m
+[0;32mI (1769) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1769) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1769) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1769) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (1770) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1771) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1772) heap_init: At 3FFB7598 len 00028A68 (162 KiB): DRAM[0m
+[0;32mI (1772) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1772) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1772) heap_init: At 4008A450 len 00015BB0 (86 KiB): IRAM[0m
+[0;32mI (1819) spi_flash: detected chip: winbond[0m
+[0;32mI (1830) spi_flash: flash io: dio[0m
+[0;32mI (1846) main_task: Started on CPU0[0m
+[0;32mI (1846) main_task: Calling app_main()[0m
+[38;5;93m0:0>	vTaskTimer : give first Clk[0m
+[38;5;93m0:0>	vTaskTimer : give second Clk[0m
+[38;5;93m0:0>	 vTaskTimer : give third Clk [0m
+[0;35m0:1>	vTaskDecTable : pending events = 1[0m
+[38;5;100m0:0>	vTaskIncTable : pending events = 2[0m
+[0;35m1:1>	vTaskDecTable is starting computation[0m
+[38;5;100m1:0>	vTaskIncTable is starting computation[0m
+[38;5;100m1:0>	vTaskIncTable  is ending computation[0m
+[0;35m1:1>	vTaskDecTable is ending computation[0m
+[38;5;100m1:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m2:0>	Task vTaskIncTable is decrementing NbActivations : 3[0m
+[38;5;93m25:0>	vTaskTimer : give first Clk[0m
+[38;5;93m25:0>	vTaskTimer : give second Clk[0m
+[38;5;93m25:0>	 vTaskTimer : give third Clk [0m
+[38;5;100m25:0>	vTaskIncTable : pending events = 2[0m
+[0;35m25:1>	vTaskDecTable : pending events = 1[0m
+[0;35m25:1>	vTaskDecTable is starting computation[0m
+[38;5;100m25:0>	Task vTaskIncTable is decrementing NbActivations : 2[0m
+[38;5;100m25:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m25:0>	Task vTaskIncTable is decrementing NbActivations : 1[0m
+[0;35m26:1>	vTaskDecTable is ending computation[0m
+[38;5;93m50:0>	vTaskTimer : give first Clk[0m
+[38;5;93m50:0>	vTaskTimer : give second Clk[0m
+[38;5;93m50:0>	 vTaskTimer : give third Clk [0m
+[0;35m50:1>	vTaskDecTable : pending events = 1[0m
+[38;5;100m50:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m50:0>	Task vTaskIncTable is decrementing NbActivations : 0[0m
+[38;5;100m50:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m50:0>	vTaskIncTable is starting computation[0m
+[0;35m50:1>	vTaskDecTable is starting computation[0m
+[38;5;100m51:0>	vTaskIncTable  is ending computation[0m
+[0;35m51:1>	vTaskDecTable is ending computation[0m
+[38;5;93m75:0>	vTaskTimer : give first Clk[0m
+[38;5;93m75:0>	vTaskTimer : give second Clk[0m
+[38;5;93m75:0>	 vTaskTimer : give third Clk [0m
+[0;35m75:1>	vTaskDecTable : pending events = 1[0m
+[38;5;100m75:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m75:0>	Task vTaskIncTable is decrementing NbActivations : 3[0m
+[38;5;100m75:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m75:0>	Task vTaskIncTable is decrementing NbActivations : 2[0m
+[0;35m75:1>	vTaskDecTable is starting computation[0m
+[0;35m76:1>	vTaskDecTable is ending computation[0m
+[38;5;93m100:0>	vTaskTimer : give first Clk[0m
+[38;5;93m100:0>	vTaskTimer : give second Clk[0m
+[38;5;93m100:0>	 vTaskTimer : give third Clk [0m
+[0;35m100:1>	vTaskDecTable : pending events = 1[0m
+[0;35m100:1>	vTaskDecTable is starting computation[0m
+[38;5;100m100:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m100:0>	Task vTaskIncTable is decrementing NbActivations : 1[0m
+[38;5;100m100:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m100:0>	Task vTaskIncTable is decrementing NbActivations : 0[0m
+[0;35m101:1>	vTaskDecTable is ending computation[0m
+[38;5;93m125:0>	vTaskTimer : give first Clk[0m
+[38;5;93m125:0>	vTaskTimer : give second Clk[0m
+[38;5;93m125:0>	 vTaskTimer : give third Clk [0m
+[0;35m125:1>	vTaskDecTable : pending events = 1[0m
+[0;35m125:1>	vTaskDecTable is starting computation[0m
+[38;5;100m125:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m125:0>	vTaskIncTable is starting computation[0m
+[38;5;100m126:0>	vTaskIncTable  is ending computation[0m
+[0;35m126:1>	vTaskDecTable is ending computation[0m
+[38;5;100m126:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m126:0>	Task vTaskIncTable is decrementing NbActivations : 3[0m
+[38;5;93m150:0>	vTaskTimer : give first Clk[0m
+[38;5;93m150:0>	vTaskTimer : give second Clk[0m
+[38;5;93m150:0>	 vTaskTimer : give third Clk [0m
+[0;35m150:1>	vTaskDecTable : pending events = 1[0m
+[38;5;100m150:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m150:0>	Task vTaskIncTable is decrementing NbActivations : 2[0m
+[0;35m150:1>	vTaskDecTable is starting computation[0m
+[38;5;100m150:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m150:0>	Task vTaskIncTable is decrementing NbActivations : 1[0m
+[0;35m151:1>	vTaskDecTable is ending computation[0m
+[38;5;93m175:0>	vTaskTimer : give first Clk[0m
+[38;5;93m175:0>	vTaskTimer : give second Clk[0m
+[38;5;93m175:0>	 vTaskTimer : give third Clk [0m
+[0;35m175:1>	vTaskDecTable : pending events = 1[0m
+[38;5;100m175:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m175:0>	Task vTaskIncTable is decrementing NbActivations : 0[0m
+[38;5;100m175:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m175:0>	vTaskIncTable is starting computation[0m
+[0;35m175:1>	vTaskDecTable is starting computation[0m
+[38;5;100m176:0>	vTaskIncTable  is ending computation[0m
+[0;35m176:1>	vTaskDecTable is ending computation[0m
+[38;5;93m200:0>	vTaskTimer : give first Clk[0m
+[38;5;93m200:0>	vTaskTimer : give second Clk[0m
+[38;5;93m200:0>	 vTaskTimer : give third Clk [0m
+[0;35m200:1>	vTaskDecTable : pending events = 1[0m
+[0;35m200:1>	vTaskDecTable is starting computation[0m
+[38;5;100m200:0>	vTaskIncTable : pending events = 2[0m
+[38;5;100m200:0>	Task vTaskIncTable is decrementing NbActivations : 3[0m
+[38;5;100m200:0>	vTaskIncTable : pending events = 1[0m
+[38;5;100m200:0>	Task vTaskIncTable is decrementing NbActivations : 2[0m
+[0;35m200:1>	vTaskDecTable is ending computation[0m

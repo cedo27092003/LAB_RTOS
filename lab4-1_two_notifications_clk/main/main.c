@@ -29,7 +29,6 @@
 
 #include "my_helper_fct.h"
 
-static const char *TAG = "SEM";
 
 /* Application constants */
 #define STACK_SIZE 4096
@@ -41,9 +40,10 @@ const uint32_t INC_TABLE_TASK_PRIORITY = 3;
 const uint32_t DEC_TABLE_TASK_PRIORITY = 4;
 
 /* Communications */
-//SemaphoreHandle_t xSemClk;
-SemaphoreHandle_t xSemIncTab;
-SemaphoreHandle_t xSemDecTab;
+
+
+TaskHandle_t xHandleIncTable = NULL;
+TaskHandle_t xHandleDecTable = NULL;
 
 
 /* Tasks */
@@ -65,23 +65,14 @@ void app_main(void) {
 		Table[i] = i;
 	}
 
-	/* Create semaphore */
-	xSemIncTab = xSemaphoreCreateBinary();
-	xSemDecTab = xSemaphoreCreateBinary();
-
-
-	if(xSemIncTab == NULL || xSemDecTab == NULL) {
-		DISPLAYEC(TAG, COLOR_RED, "Semaphore cannot be created");
-		return;
-	}
 
 	/* Stop scheduler */
 	vTaskSuspendAll();
 
 	/* Create Tasks */
 	xTaskCreatePinnedToCore(vTaskTimer, "vTaskTimer", STACK_SIZE, (void *)COLOR_PURPLE, TIMER_TASK_PRIORITY, NULL, CORE_0);
-	xTaskCreatePinnedToCore(vTaskIncTable, "vTaskIncTable", STACK_SIZE, (void *)COLOR_OLIVE, INC_TABLE_TASK_PRIORITY, NULL, CORE_0);
-	xTaskCreatePinnedToCore(vTaskDecTable, "vTaskDecTable", STACK_SIZE, (void *)COLOR_MAGENTA, DEC_TABLE_TASK_PRIORITY, NULL, CORE_1);
+	xTaskCreatePinnedToCore(vTaskIncTable, "vTaskIncTable", STACK_SIZE, (void *)COLOR_OLIVE, INC_TABLE_TASK_PRIORITY, &xHandleIncTable, CORE_0);
+	xTaskCreatePinnedToCore(vTaskDecTable, "vTaskDecTable", STACK_SIZE, (void *)COLOR_MAGENTA, DEC_TABLE_TASK_PRIORITY, &xHandleDecTable, CORE_1);
 	
 	/* Continue scheduler */
 	xTaskResumeAll();
@@ -101,10 +92,13 @@ void vTaskTimer(void *pvParameters) {
 
 		COMPUTE_IN_TIME_MS(20);
 		DISPLAYC(pcColor, "%s : give first Clk", pcTaskName);	
-		xSemaphoreGive(xSemIncTab);
+		xTaskNotifyGive(xHandleIncTable);
 
 		DISPLAYC(pcColor, "%s : give second Clk", pcTaskName);
-		xSemaphoreGive(xSemDecTab);
+		xTaskNotifyGive(xHandleDecTable);
+
+		DISPLAYC(pcColor, " %s : give third Clk ", pcTaskName);
+		xTaskNotifyGive(xHandleIncTable);
 		
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(250));
 	}
@@ -115,12 +109,13 @@ void vTaskTimer(void *pvParameters) {
 void vTaskIncTable(void *pvParameters) {
 	const char *pcTaskName = pcTaskGetName(NULL);
 	const char *pcColor = (pvParameters!=NULL) ? (const char *)pvParameters : "";
-	uint32_t ActivationNumber = 0, index;
+	uint32_t ActivationNumber = 0, index, nbEvents;
 	
 
 	for ( ; ; )
 	{
-		xSemaphoreTake(xSemIncTab, portMAX_DELAY);
+		nbEvents = ulTaskNotifyTake(pdFALSE, portMAX_DELAY);
+		DISPLAYC(pcColor, "%s : pending events = %lu", pcTaskName, nbEvents);
 
 		if(ActivationNumber==0) {
 			DISPLAYC(pcColor, "%s is starting computation", pcTaskName);	
@@ -144,10 +139,12 @@ void vTaskIncTable(void *pvParameters) {
 void vTaskDecTable(void *pvParameters) {
 	const char *pcTaskName = pcTaskGetName(NULL);
 	const char *pcColor = (pvParameters!=NULL) ? (const char *)pvParameters : "";
-	uint32_t index;
+	uint32_t index, nbEvents;
 
 	for( ; ;) {
-		xSemaphoreTake(xSemDecTab, portMAX_DELAY);
+		nbEvents = ulTaskNotifyTake(pdFALSE, portMAX_DELAY);
+		DISPLAYC(pcColor, "%s : pending events = %lu", pcTaskName, nbEvents);
+
 
 		DISPLAYC(pcColor, "%s is starting computation", pcTaskName);
 		for(index=0; index<TABLE_SIZE; index++){

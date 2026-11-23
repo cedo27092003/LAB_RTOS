@@ -1,0 +1,2 @@
+source /home/cedric/esp-prjects/LAB_RTOS/lab4-1_two_notifications_clk/build/bootloader/gdbinit/symbols
+source /home/cedric/esp-prjects/LAB_RTOS/lab4-1_two_notifications_clk/build/bootloader/gdbinit/connect
